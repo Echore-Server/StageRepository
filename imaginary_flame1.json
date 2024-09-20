@@ -1,0 +1,154 @@
+{
+    "version": "1.19",
+    "name": "Imaginary: Flame1",
+    "world_folder_name": "imaginary_flame1",
+    "identifier": "imaginary_flame1",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "spawn_position": [260.5, 65.0, 260.5],
+    "object_position": [260.5, 65.0, 260.5],
+    "monster_point_references": {
+        "boss": {
+            "position": [0, 0, 0],
+            "spawn_type": "once",
+            "tick": 200,
+            "pool": [
+                {
+                    "group": "aggressive_zombie",
+                    "level": 1,
+                    "count": 1
+                }
+            ],
+            "performances": [
+                {
+                    "type": "lerp",
+                    "lerp_type": "direction",
+                    "facing": "up",
+                    "length": 0.5,
+                    "opposite_length": 3.0,
+                    "lerp_ticks": 15
+                }
+            ],
+            "max_spawn_offset": [0, 0, 0]
+        }
+    },
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": {},
+            "position": [260.5, 65.0, 260.5],
+            "relay_points": [],
+            "spawn_position": null,
+            "object_speed": 0.15,
+            "monster_points": [],
+            "border_blocks": [
+            ]
+        },
+        "children": {
+            "0": {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        }
+    },
+    "node_references": {
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "require_object_arrival": false,
+                "can_monsters_attack_object": false,
+                "level_type": "normal",
+                "monster_stats_modifier": {
+                    "health_multiplier": 0.3,
+                    "attack_damage_multiplier": 0.75
+                },
+                "level": {
+                },
+                "object_navigation_rules": [
+                    {
+                        "name": "dangerous",
+                        "range": 15
+                    }
+                ],
+                "position": [260.5, 65.0, 260.5],
+                "border_blocks": [],
+                "relay_points": {
+                },
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "game_action_timestamp": {
+                    "0": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:1}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
+                },
+                "monster_points": {
+                    "0": {
+                        "position": [260.5, 65.0, 260.5],
+                        "spawn_type": "periodic",
+                        "offset": 0,
+                        "period": 1,
+                        "count": 4,
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "group": "explosive_husk",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 4,
+                                "radius_max": 10
+                            }
+                        ],
+                        "max_spawn_offset": [0, 0, 0]
+                    },
+                    "1": {
+                        "list": [
+                            {
+                                "serialize_type": "reference",
+                                "reference": "boss",
+                                "override": {
+                                    "position": [242.5, 65.0, 263.5]
+                                }
+                            },
+                            {
+                                "serialize_type": "reference",
+                                "reference": "boss",
+                                "override": {
+                                    "position": [260.5, 65.0, 240.5]
+                                }
+                            },
+                            {
+                                "serialize_type": "reference",
+                                "reference": "boss",
+                                "override": {
+                                    "position": [281.5, 66.0, 262.5]
+                                }
+                            },
+                            {
+                                "serialize_type": "reference",
+                                "reference": "boss",
+                                "override": {
+                                    "position": [260.5, 66.0, 281.5]
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "children": {
+            }
+        }
+    }
+}

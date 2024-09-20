@@ -1,0 +1,97 @@
+{
+    "version": "1.19",
+    "name": "Imaginary: Physical1",
+    "world_folder_name": "imaginary_physical1",
+    "identifier": "imaginary_physical1",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "spawn_position": [315.5, 66.0, 245.5],
+    "object_position": [315.5, 66.0, 245.5],
+    "monster_point_references": {
+    },
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": {},
+            "position": [315.5, 66.0, 245.5],
+            "relay_points": [],
+            "spawn_position": null,
+            "object_speed": 0.15,
+            "monster_points": [],
+            "border_blocks": [
+            ]
+        },
+        "children": {
+            "0": {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        }
+    },
+    "node_references": {
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "require_object_arrival": false,
+                "can_monsters_attack_object": false,
+                "level_type": "normal",
+                "monster_stats_modifier": {
+                    "health_multiplier": 0.3,
+                    "attack_damage_multiplier": 0.75,
+                    "movement_speed_multiplier": 1.5
+                },
+                "level": {
+                },
+                "position": [315.5, 66.0, 245.5],
+                "border_blocks": [],
+                "relay_points": {
+                },
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "game_action_timestamp": {
+                    "0": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:0}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
+                },
+                "monster_points": {
+                    "0": {
+                        "position": [237.5, 66.0, 247.5],
+                        "spawn_type": "periodic",
+                        "offset": 30,
+                        "period": 10,
+                        "count": 30,
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "group": "zombie",
+                                "level": 1,
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.5,
+                                "opposite_length": 3.0,
+                                "lerp_ticks": 60
+                            }
+                        ],
+                        "max_spawn_offset": [14, 0, 30]
+                    }
+                }
+            },
+            "children": {
+            }
+        }
+    }
+}

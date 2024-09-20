@@ -1,0 +1,161 @@
+{
+    "version": "1.19",
+    "name": "Imaginary: Water1",
+    "world_folder_name": "imaginary_water1",
+    "identifier": "imaginary_water1",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "spawn_position": [275.5, 49.0, 247.5],
+    "object_position": [275.5, 49.0, 247.5],
+    "monster_point_references": {
+    },
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": {},
+            "position": [275.5, 49.0, 247.5],
+            "relay_points": [],
+            "spawn_position": null,
+            "object_speed": 0.15,
+            "monster_points": [],
+            "border_blocks": [
+            ]
+        },
+        "children": {
+            "0": {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        }
+    },
+    "node_references": {
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "require_object_arrival": true,
+                "can_monsters_attack_object": false,
+                "level_type": "purification",
+                "monster_stats_modifier": {
+                    "health_multiplier": 0.3,
+                    "attack_damage_multiplier": 0.75,
+                    "movement_speed_multiplier": 1.0
+                },
+                "level": {
+                    "relay_point": 1,
+                    "range": 9,
+                    "is_range_2d": true,
+                    "max_level": 3,
+                    "position": [244.5, 49.0, 265.5],
+                    "beacon_base_position": [244.01, 42, 265.01],
+                    "amethyst_power_pool": {
+                        "1": "all",
+                        "2": "all",
+                        "3": "all"
+                    },
+                    "fallback_amethyst_power_pool": [
+
+                    ],
+                    "require_energy": {
+                        "1": 100,
+                        "2": 140,
+                        "3": 140
+                    },
+                    "successful_game_actions": [
+                    ]
+                },
+                "position": [244.5, 49.0, 265.5],
+                "border_blocks": [],
+                "relay_points": {
+                    "0": [270.5, 49.0, 280.5],
+                    "1": [244.5, 49.0, 265.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.3,
+                "game_action_timestamp": {
+                },
+                "monster_points": {
+                    "0": {
+                        "position": [244.5, 50.0, 265.5],
+                        "spawn_type": "periodic",
+                        "offset": "{relay_point:1}",
+                        "period": 120,
+                        "count": 3,
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "group": "skeleton",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 1,
+                                "radius_max": 3
+                            }
+                        ],
+                        "max_spawn_offset": [0, 0, 0]
+                    },
+                    "1": {
+                        "position": [256.5, 49.0, 275.5],
+                        "spawn_type": "periodic",
+                        "offset": "{purification_level:level_started_at:1}",
+                        "period": 1,
+                        "count": 3,
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "group": "hardened_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                        ],
+                        "max_spawn_offset": [1.5, 0, 1.5]
+                    },
+                    "2": {
+                        "position": [243.5, 49.0, 246.5],
+                        "spawn_type": "periodic",
+                        "offset": "{purification_level:level_started_at:2}",
+                        "period": 1,
+                        "count": 3,
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "group": "hardened_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                        ],
+                        "max_spawn_offset": [1.5, 0, 1.5]
+                    },
+                    "3": {
+                        "position": [231.5, 49.0, 271.5],
+                        "spawn_type": "periodic",
+                        "offset": "{purification_level:level_started_at:3}",
+                        "period": 1,
+                        "count": 3,
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "group": "hardened_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                        ],
+                        "max_spawn_offset": [1.5, 0, 1.5]
+                    }
+                }
+            },
+            "children": {
+            }
+        }
+    }
+}
