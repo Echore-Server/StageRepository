@@ -1,0 +1,198 @@
+{
+    "global_stage_level": -1,
+    "version": "1.20",
+    "name": "Tutorial",
+    "world_folder_name": "stage_tutorial",
+    "identifier": "tutorial",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "spawn_position": [256.5, 65.0, 251.5],
+    "object_position": [256.5, 65.0, 251.5],
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": {},
+            "position": [256.5, 65.0, 251.5],
+            "relay_points": [],
+            "spawn_position": null,
+            "object_speed": 0.15,
+            "monster_points": [],
+            "border_blocks": [
+            ]
+        },
+        "children": {
+            "0": {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        }
+    },
+    "node_references": {
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {
+                },
+                "position": [256.5, 65.0, 247.5],
+                "border_blocks": [],
+                "object_navigation_rules": [
+                    {
+                        "name": "dangerous"
+                    },
+                    {
+                        "name": "not_damaged_recently"
+                    },
+                    {
+                        "name": "players_within_range"
+                    }
+                ],
+                "relay_points": {
+                },
+                "spawn_position": null,
+                "object_speed": 0.3,
+                "game_action_timestamp": {
+                },
+                "monster_points": {
+                }
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "g2"
+                }
+            }
+        },
+        "g2": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 2,
+                    "range": 10,
+                    "max_level": 2,
+                    "override_range_by_level": {},
+                    "position": [256.5, 65.0, 204.5],
+                    "beacon_base_position": [256, 61, 204],
+                    "amethyst_power_pool": [],
+                    "fallback_amethyst_power_pool": [],
+                    "require_energy": {
+                        "1": 300,
+                        "2": 300
+                    }
+                },
+                "position": [256.5, 65.0, 174.5],
+                "border_blocks": [],
+                "object_navigation_rules": [
+                    {
+                        "name": "dangerous"
+                    },
+                    {
+                        "name": "not_damaged_recently"
+                    },
+                    {
+                        "name": "players_within_range"
+                    }
+                ],
+                "relay_points": {
+                    "1": [256.5, 65.0, 208.5],
+                    "2": [256.5, 65.0, 205.5]
+                },
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.0,
+                    "movement_speed_multiplier": 0.5,
+                    "attack_damage_multiplier": 0.2
+                },
+                "spawn_position": null,
+                "object_speed": 0.12,
+                "game_action_timestamp": {
+                },
+                "monster_points": {
+                    "0": {
+
+                        "position": [256.5, 65.0, 229.5],
+                        "spawn_type": "periodic",
+                        "offset": 0,
+                        "period": 5,
+                        "count": 4,
+                        "pool": [
+                            {
+                                "group": "hardened_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.5,
+                                "opposite_length": 2.0,
+                                "lerp_ticks": 20
+                            }
+                        ],
+                        "max_spawn_offset": [0.5, 0, 0.5]
+                    },
+                    "1": {
+
+                        "position": [256.5, 65.0, 186.5],
+                        "spawn_type": "periodic",
+                        "offset": "{purification_level:1:progress:10}",
+                        "period": 20,
+                        "count": 5,
+                        "pool": [
+                            {
+                                "group": "hardened_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.5,
+                                "opposite_length": 2.0,
+                                "lerp_ticks": 20
+                            }
+                        ],
+                        "max_spawn_offset": [4, 0, 1]
+                    },
+                    "2": {
+                        "position": [256.5, 65.0, 186.5],
+                        "spawn_type": "periodic",
+                        "offset": "{purification_level:2:progress:10}",
+                        "period": 10,
+                        "count": 10,
+                        "pool": [
+                            {
+                                "group": "hardened_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.5,
+                                "opposite_length": 2.0,
+                                "lerp_ticks": 20
+                            }
+                        ],
+                        "max_spawn_offset": [4, 0, 1]
+                    }
+                }
+            },
+            "children": {
+            }
+        }
+    },
+    "monster_point_references": {
+
+    }
+}

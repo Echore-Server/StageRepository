@@ -1,0 +1,55 @@
+{
+    "version": "0.0",
+    "name": "Testing",
+    "world_folder_name": "stage1",
+    "identifier": "testing",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": "testing",
+    "spawn_position": [256.5, 66.0, 256.5],
+    "object_position": [256.5, 66.0, 256.5],
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "position": [320.5, 66.0, 256.5],
+            "relay_points": [],
+            "spawn_position": null,
+            "object_speed": 0.0001,
+            "monster_points": {
+
+            }
+        },
+        "children": {
+            "0": {
+                "serialize_type": "reference",
+                "reference": "w"
+            }
+        }
+    },
+    "node_references": {
+        "w": {
+            "serialize_type": "direct",
+            "info": {
+                "position": [320.5, 66.0, 256.5],
+                "relay_points": [],
+                "spawn_position": null,
+                "object_speed": 0.001,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [256.5, 66.0, 256.5],
+                        "timestamp": {
+                            "10": [
+                                {
+                                    "registry_identifier": "zombie",
+                                    "count": 10
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "children": {
+            }
+        }
+    }
+}

@@ -1,0 +1,4169 @@
+{
+    "name": "Plateau",
+    "world_folder_name": "story2",
+    "identifier": "plateau",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "global_stage_level": -1,
+    "story_info": {
+        "checkpoint_node": "g4",
+        "raid_nodes": []
+    },
+    "version": "1.20",
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": [],
+            "position": [
+                293.5,
+                51,
+                367.5
+            ],
+            "spawn_position": null,
+            "object_speed": 0,
+            "require_object_arrival": true,
+            "roll_amethyst_power": false,
+            "can_monsters_attack_object": false,
+            "monster_stats_modifier": {
+                "health_multiplier": 1,
+                "attack_damage_multiplier": 1,
+                "movement_speed_multiplier": 1
+            },
+            "relay_points": [],
+            "monster_points": [],
+            "static_monster_points": [],
+            "border_blocks": [],
+            "game_action_timestamp": [],
+            "object_navigation_rules": "normal"
+        },
+        "children": [
+            {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        ],
+        "vote_positions": [],
+        "vote_names": []
+    },
+    "object_position": [
+        293.5,
+        51,
+        367.5
+    ],
+    "spawn_position": [
+        293.5,
+        51,
+        367.5
+    ],
+    "node_references": {
+        "g6": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 2,
+                    "range": 5,
+                    "is_range_2d": true,
+                    "max_level": 4,
+                    "position": [
+                        198.5,
+                        42,
+                        292.5
+                    ],
+                    "beacon_base_position": [
+                        224,
+                        40,
+                        278
+                    ],
+                    "override_range_by_level": {
+                        "2": 35,
+                        "3": 35,
+                        "4": 8
+                    },
+                    "fallback_amethyst_power_pool": "all",
+                    "amethyst_power_pool": {
+                        "3": [
+                            "cooltime"
+                        ],
+                        "4": [
+                            "regeneration"
+                        ],
+                        "2": [
+                            "health_boost"
+                        ]
+                    },
+                    "require_energy": {
+                        "1": 400,
+                        "2": 1000,
+                        "3": 2000,
+                        "4": 1700
+                    },
+                    "successful_game_actions": [],
+                    "follow_object": false,
+                    "stop_object_navigation": true,
+                    "plane_normal": [
+                        0,
+                        0.1,
+                        -0.9
+                    ]
+                },
+                "position": [
+                    182.5,
+                    40,
+                    280.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.16,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 2.5,
+                    "attack_damage_multiplier": 0.8,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        198.5,
+                        40,
+                        287.5
+                    ],
+                    [
+                        198.5,
+                        40,
+                        288.5
+                    ],
+                    [
+                        198.5,
+                        40,
+                        291.5
+                    ],
+                    [
+                        208.5,
+                        40,
+                        292.5
+                    ],
+                    [
+                        198.5,
+                        40,
+                        291.5
+                    ],
+                    [
+                        185.5,
+                        40,
+                        280.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            219.5,
+                            49,
+                            264.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 5,
+                        "count": 10,
+                        "offset": "{purification_level:1:progress:50}+30",
+                        "increment": 4,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    -1.25,
+                                    -1.34,
+                                    1.27
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "2": {
+                        "position": [
+                            219.5,
+                            49,
+                            295.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 10,
+                        "offset": "{purification_level:1:progress:50}+1",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "swift_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    -0.63,
+                                    -0.77,
+                                    -0.97
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            182.5,
+                            43,
+                            279.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            4,
+                            13
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 35,
+                        "count": 20,
+                        "offset": "{purification_level:2:progress:10}+20",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            182.5,
+                            46,
+                            271.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{purification_level:2:progress:15}+35",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.23,
+                                    0.28,
+                                    -0.02
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            182.5,
+                            40,
+                            285.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 3,
+                        "offset": "{purification_level:2:progress:35}+35",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "6": {
+                        "position": [
+                            217.5,
+                            43,
+                            279.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            4,
+                            13
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 20,
+                        "count": 5,
+                        "offset": "{purification_level:3:progress:12}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "swift_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "7": {
+                        "position": [
+                            199.5,
+                            39,
+                            268.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{purification_level:3:progress:35}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    1.45,
+                                    0.93,
+                                    0.12
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "8": {
+                        "position": [
+                            216.5,
+                            41,
+                            273.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{purification_level:3:progress:12}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "9": {
+                        "position": [
+                            214.5,
+                            40,
+                            290.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 5,
+                        "count": 12,
+                        "offset": "{purification_level:3:progress:25}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "swift_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "10": {
+                        "position": [
+                            194.5,
+                            48,
+                            276.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 5,
+                        "count": 3,
+                        "offset": "{purification_level:3:progress:40}+40",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    -1,
+                                    0
+                                ],
+                                "lerp_ticks": 40,
+                                "cancel_suffocation_damage": false
+                            },
+                            {
+                                "type": "delayed",
+                                "delay": 50,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            1.81,
+                                            0.63,
+                                            -0.01
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "11": {
+                        "position": [
+                            214.5,
+                            44,
+                            292.5
+                        ],
+                        "max_spawn_offset": [
+                            3,
+                            2.5,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 20,
+                        "count": 30,
+                        "offset": "{purification_level:3:progress:35}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    1
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    -0.5
+                                ],
+                                "lerp_ticks": 30,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "12": {
+                        "position": [
+                            198.5,
+                            40,
+                            291.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 140,
+                        "offset": "{purification_level:4:progress:10}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "hardened_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "husk_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 7,
+                                "radius_max": 25,
+                                "adjust_y": true,
+                                "safe": true
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "13": {
+                        "position": [
+                            198.5,
+                            40,
+                            291.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 30,
+                        "count": 50,
+                        "offset": "{purification_level:4:progress:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 7,
+                                "radius_max": 25,
+                                "adjust_y": true,
+                                "safe": true
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "14": {
+                        "position": [
+                            198.5,
+                            40,
+                            291.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 2,
+                        "count": 110,
+                        "offset": "{purification_level:4:progress:50}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "husk_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "hardened_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 7,
+                                "radius_max": 25,
+                                "adjust_y": true,
+                                "safe": true
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:1}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                198,
+                                49,
+                                277
+                            ],
+                            "bb_max": [
+                                198,
+                                49,
+                                277
+                            ],
+                            "identifier": "air",
+                            "break": false,
+                            "update": true
+                        },
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{relay_point:0}": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                198.5,
+                                43,
+                                288.5
+                            ],
+                            "facing_position": [
+                                198.5,
+                                41,
+                                297.5
+                            ],
+                            "ease_duration": 0
+                        },
+                        {
+                            "name": "teleport_players",
+                            "position": [
+                                198.5,
+                                49,
+                                291.5
+                            ],
+                            "yaw": 0,
+                            "pitch": 0
+                        }
+                    ],
+                    "{relay_point:0}+5": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                198.5,
+                                41,
+                                292.5
+                            ],
+                            "facing_position": [
+                                198.5,
+                                41,
+                                297.5
+                            ],
+                            "ease_duration": 1.5
+                        }
+                    ],
+                    "{relay_point:1}+70": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                202.5,
+                                40,
+                                287.5
+                            ],
+                            "facing_position": [
+                                197.5,
+                                44,
+                                293.5
+                            ],
+                            "ease_duration": 0
+                        }
+                    ],
+                    "{relay_point:1}+60": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{relay_point:1}+160": [
+                        {
+                            "name": "broadcast_clear_camera_instruction"
+                        },
+                        {
+                            "name": "teleport_players",
+                            "position": [
+                                198.5,
+                                40,
+                                291.5
+                            ],
+                            "yaw": 180,
+                            "pitch": 0
+                        }
+                    ],
+                    "{purification_level:1:progress:50}": [
+                        {
+                            "name": "raytrace_fill_blocks",
+                            "from": [
+                                220.5,
+                                50,
+                                263.5
+                            ],
+                            "to": [
+                                217.5,
+                                48,
+                                266.5
+                            ],
+                            "identifier": "air",
+                            "break": true,
+                            "ray_size": 4,
+                            "sphere_ray": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                218.5,
+                                48,
+                                266.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "raytrace_fill_blocks",
+                            "from": [
+                                219.5,
+                                50,
+                                295.5
+                            ],
+                            "to": [
+                                217.5,
+                                47,
+                                292.5
+                            ],
+                            "identifier": "air",
+                            "break": true,
+                            "ray_size": 4,
+                            "sphere_ray": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                217.5,
+                                47,
+                                292.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:2:progress:10}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                202,
+                                40,
+                                291
+                            ],
+                            "bb_max": [
+                                194,
+                                40,
+                                289
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "damage_line_of_sight_friends",
+                            "sight_from": [
+                                203.5,
+                                33,
+                                286.5
+                            ],
+                            "sight_to": [
+                                181.5,
+                                45,
+                                289.5
+                            ],
+                            "line_size": 2,
+                            "damage": 4,
+                            "attribute": "physical",
+                            "attacker_position": [
+                                203.5,
+                                33,
+                                286.5
+                            ],
+                            "knockback_strength_xz": 3,
+                            "knockback_strength_y": 3
+                        },
+                        {
+                            "name": "raytrace_fill_blocks",
+                            "from": [
+                                203.5,
+                                33,
+                                286.5
+                            ],
+                            "to": [
+                                181.5,
+                                45,
+                                289.5
+                            ],
+                            "identifier": "sculk",
+                            "break": false,
+                            "ray_size": 2,
+                            "sphere_ray": true,
+                            "collide": true,
+                            "collide_knockback_strength": 1.5
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                181.5,
+                                45,
+                                289.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:2:progress:15}": [
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                218.5,
+                                46,
+                                271.5
+                            ],
+                            "to": [
+                                181.5,
+                                46,
+                                271.5
+                            ]
+                        }
+                    ],
+                    "{purification_level:2:progress:15}+35": [
+                        {
+                            "name": "explosion",
+                            "position": [
+                                181.5,
+                                46,
+                                271.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:2:progress:35}": [
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                217.5,
+                                40,
+                                285.5
+                            ],
+                            "to": [
+                                182.5,
+                                40,
+                                285.5
+                            ]
+                        }
+                    ],
+                    "{purification_level:level_started_at:2}": [
+                        {
+                            "name": "plateau_invoke_wave",
+                            "position": [
+                                198.5,
+                                40,
+                                297.5
+                            ],
+                            "hostile_damage": 50,
+                            "friend_damage": 3
+                        }
+                    ],
+                    "{purification_level:level_started_at:3}": [
+                        {
+                            "name": "plateau_invoke_wave",
+                            "position": [
+                                198.5,
+                                40,
+                                297.5
+                            ],
+                            "hostile_damage": 50,
+                            "friend_damage": 3
+                        }
+                    ],
+                    "{purification_level:3:progress:12}": [
+                        {
+                            "name": "raytrace_fill_blocks",
+                            "from": [
+                                193.5,
+                                56,
+                                286.5
+                            ],
+                            "to": [
+                                218.5,
+                                41,
+                                273.5
+                            ],
+                            "identifier": "sculk",
+                            "break": false,
+                            "ray_size": 3,
+                            "collide": true,
+                            "collide_knockback_strength": 2.5,
+                            "sphere_ray": true
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                217.5,
+                                40,
+                                272.5
+                            ],
+                            "to": [
+                                182.5,
+                                40,
+                                272.5
+                            ],
+                            "instant": true
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                217.5,
+                                40,
+                                273.5
+                            ],
+                            "to": [
+                                182.5,
+                                40,
+                                273.5
+                            ],
+                            "instant": true
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                217.5,
+                                40,
+                                274.5
+                            ],
+                            "to": [
+                                182.5,
+                                40,
+                                274.5
+                            ],
+                            "instant": true
+                        }
+                    ],
+                    "{purification_level:3:progress:16}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                182,
+                                39,
+                                266
+                            ],
+                            "bb_max": [
+                                203,
+                                39,
+                                292
+                            ],
+                            "identifier": "redstone_block",
+                            "break": false
+                        },
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{purification_level:3:progress:25}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                182,
+                                39,
+                                266
+                            ],
+                            "bb_max": [
+                                203,
+                                39,
+                                292
+                            ],
+                            "identifier": "lava",
+                            "break": false
+                        },
+                        {
+                            "name": "broadcast_title",
+                            "title": "§r ",
+                            "subtitle": "§7耐えろ..."
+                        }
+                    ],
+                    "{purification_level:3:progress:20}": [
+                        {
+                            "name": "plateau_invoke_line_of_laser",
+                            "from": [
+                                182.5,
+                                40,
+                                292.5
+                            ],
+                            "to": [
+                                182.5,
+                                40,
+                                266.5
+                            ],
+                            "offset_x": 36,
+                            "offset_y": 0,
+                            "offset_z": 0,
+                            "delay": 6,
+                            "instant": true,
+                            "ratio": null
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:8}": [
+                        {
+                            "name": "plateau_invoke_wave",
+                            "position": [
+                                216.5,
+                                40,
+                                273.5
+                            ],
+                            "hostile_damage": 50,
+                            "friend_damage": 3
+                        },
+                        {
+                            "name": "raytrace_fill_blocks",
+                            "from": [
+                                193.5,
+                                56,
+                                286.5
+                            ],
+                            "to": [
+                                218.5,
+                                41,
+                                273.5
+                            ],
+                            "identifier": "air",
+                            "break": true,
+                            "ray_size": 3,
+                            "sphere_ray": true
+                        }
+                    ],
+                    "{purification_level:3:progress:90}": [
+                        {
+                            "name": "broadcast_title",
+                            "subtitle": "§c浄化範囲収縮を検知..！",
+                            "title": "§r "
+                        }
+                    ],
+                    "{purification_level:3:progress:85}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                182,
+                                39,
+                                266
+                            ],
+                            "bb_max": [
+                                203,
+                                39,
+                                292
+                            ],
+                            "identifier": "emerald_block",
+                            "break": false
+                        }
+                    ],
+                    "{purification_level:3:progress:95}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                182,
+                                39,
+                                266
+                            ],
+                            "bb_max": [
+                                203,
+                                39,
+                                292
+                            ],
+                            "identifier": "polished_blackstone_bricks",
+                            "break": false
+                        },
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{purification_level:level_started_at:4}": [
+                        {
+                            "name": "plateau_invoke_wave",
+                            "position": [
+                                198.5,
+                                40,
+                                297.5
+                            ],
+                            "hostile_damage": 50,
+                            "friend_damage": 3
+                        }
+                    ],
+                    "{purification_level:4:progress:45}": [
+                        {
+                            "name": "plateau_invoke_laser_spell"
+                        },
+                        {
+                            "name": "broadcast_title",
+                            "title": "§aレーザー銃準備完了",
+                            "subtitle": ""
+                        }
+                    ],
+                    "{purification_level:4:progress:99}": [
+                        {
+                            "name": "plateau_invoke_finale",
+                            "position": [
+                                198.5,
+                                42,
+                                297.5
+                            ],
+                            "range_from": [
+                                217,
+                                40,
+                                292
+                            ],
+                            "range_to": [
+                                182,
+                                47,
+                                266
+                            ],
+                            "radius": 1
+                        },
+                        {
+                            "name": "plateau_invoke_wave",
+                            "position": [
+                                198.5,
+                                40,
+                                297.5
+                            ],
+                            "hostile_damage": 75,
+                            "friend_damage": 0
+                        }
+                    ],
+                    "{purification_level:4:progress:90}": [
+                        {
+                            "name": "cancel_monster_spawn",
+                            "point_number": 14
+                        },
+                        {
+                            "name": "cancel_monster_spawn",
+                            "point_number": 13
+                        }
+                    ],
+                    "{relay_point:3}": {
+                        "1": {
+                            "name": "stop_object_navigation"
+                        }
+                    },
+                    "{relay_point:4}": {
+                        "1": {
+                            "name": "stop_object_navigation"
+                        }
+                    }
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g5": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 13,
+                    "range": 5,
+                    "is_range_2d": true,
+                    "max_level": 1,
+                    "position": [
+                        200.5,
+                        40,
+                        259.5
+                    ],
+                    "beacon_base_position": [
+                        196,
+                        37,
+                        253
+                    ],
+                    "override_range_by_level": [],
+                    "fallback_amethyst_power_pool": [],
+                    "amethyst_power_pool": [],
+                    "require_energy": {
+                        "1": 300
+                    },
+                    "successful_game_actions": [],
+                    "follow_object": false,
+                    "stop_object_navigation": true,
+                    "plane_normal": null
+                },
+                "position": [
+                    198.5,
+                    40,
+                    281.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 2.25,
+                    "attack_damage_multiplier": 1.3,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        112.5,
+                        64,
+                        275.5
+                    ],
+                    [
+                        74.5,
+                        41,
+                        274.5
+                    ],
+                    [
+                        92.5,
+                        41,
+                        274.5
+                    ],
+                    [
+                        102.5,
+                        41,
+                        274.5
+                    ],
+                    [
+                        115.5,
+                        41,
+                        274.5
+                    ],
+                    [
+                        135.5,
+                        41,
+                        274.5
+                    ],
+                    [
+                        155.5,
+                        41,
+                        274.5
+                    ],
+                    [
+                        162.5,
+                        41,
+                        274.5
+                    ],
+                    [
+                        162.5,
+                        41,
+                        255.5
+                    ],
+                    [
+                        162.5,
+                        41,
+                        238.5
+                    ],
+                    [
+                        180.5,
+                        41,
+                        238.5
+                    ],
+                    [
+                        200.5,
+                        41,
+                        238.5
+                    ],
+                    [
+                        200.5,
+                        41,
+                        251.5
+                    ],
+                    [
+                        200.5,
+                        40,
+                        258.5
+                    ],
+                    [
+                        204.5,
+                        44,
+                        264.5
+                    ],
+                    [
+                        204.5,
+                        40,
+                        267.5
+                    ],
+                    [
+                        198.5,
+                        40,
+                        277.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            87.5,
+                            41,
+                            274.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 5,
+                        "offset": "{relay_point:0} + 30",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -3,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 10,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "2": {
+                        "position": [
+                            89.5,
+                            42,
+                            270.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:0}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            102.5,
+                            42,
+                            278.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            117.5,
+                            43,
+                            278.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            119.5,
+                            42,
+                            278.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "6": {
+                        "position": [
+                            122.5,
+                            42,
+                            278.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "7": {
+                        "position": [
+                            118.5,
+                            42,
+                            270.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "8": {
+                        "position": [
+                            121.5,
+                            43,
+                            270.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "9": {
+                        "position": [
+                            123.5,
+                            42,
+                            270.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2}",
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 1,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "10": {
+                        "position": [
+                            100.5,
+                            50,
+                            274.5
+                        ],
+                        "max_spawn_offset": [
+                            2,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 10,
+                        "offset": "{relay_point:2}+2",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "11": {
+                        "position": [
+                            162.5,
+                            41,
+                            265.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 20,
+                        "count": 5,
+                        "offset": "{relay_point:3}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    9
+                                ],
+                                "lerp_ticks": 20,
+                                "cancel_suffocation_damage": false
+                            },
+                            {
+                                "type": "delayed",
+                                "delay": 25,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            -5.33,
+                                            0.48,
+                                            -0.02
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "12": {
+                        "position": [
+                            127.5,
+                            41,
+                            274.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 20,
+                        "offset": "{relay_point:3}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_golem_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "13": {
+                        "position": [
+                            195.5,
+                            37,
+                            254.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{purification_level:1:progress:54}+3",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_manager_lv1",
+                                "count": 1,
+                                "entity_id_variable": "boss"
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    12,
+                                    8,
+                                    13
+                                ],
+                                "lerp_ticks": 5,
+                                "cancel_suffocation_damage": false
+                            },
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            -0.89,
+                                            0.87,
+                                            2.55
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:0}": [
+                        {
+                            "name": "teleport_villager",
+                            "position": [
+                                74.5,
+                                41,
+                                274.5
+                            ]
+                        }
+                    ],
+                    "{relay_point:0} + 10": [
+                        {
+                            "name": "teleport_players",
+                            "position": [
+                                74.5,
+                                41,
+                                274.5
+                            ]
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:2}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                89,
+                                41,
+                                270
+                            ],
+                            "bb_max": [
+                                89,
+                                41,
+                                270
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                89.5,
+                                42,
+                                270.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:4}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                116,
+                                41,
+                                270
+                            ],
+                            "bb_max": [
+                                124,
+                                42,
+                                278
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                118.5,
+                                42,
+                                270.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                121.5,
+                                43,
+                                270.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                117.5,
+                                43,
+                                278.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                121.5,
+                                42,
+                                278.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{relay_point:2}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                98,
+                                49,
+                                272
+                            ],
+                            "bb_max": [
+                                102,
+                                52,
+                                276
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                100.5,
+                                50,
+                                274.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:3}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                102,
+                                41,
+                                278
+                            ],
+                            "bb_max": [
+                                102,
+                                41,
+                                278
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                102.5,
+                                42,
+                                278.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{relay_point:12}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{relay_point:12} + 40": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                200,
+                                42,
+                                253
+                            ],
+                            "bb_max": [
+                                200,
+                                43,
+                                254
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{purification_level:1:progress:54}": [
+                        {
+                            "name": "explosion",
+                            "position": [
+                                198.5,
+                                41,
+                                256.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "reject_purification"
+                        },
+                        {
+                            "name": "stop_object_navigation"
+                        },
+                        {
+                            "name": "raytrace_fill_blocks",
+                            "from": [
+                                195,
+                                37,
+                                254
+                            ],
+                            "to": [
+                                205,
+                                45,
+                                265
+                            ],
+                            "identifier": "air",
+                            "break": true,
+                            "ray_size": 0.4
+                        },
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                199.5,
+                                43,
+                                260.5
+                            ],
+                            "facing_position": [
+                                203.5,
+                                45,
+                                263.5
+                            ],
+                            "ease_duration": 1,
+                            "ease_type": 9
+                        }
+                    ],
+                    "{purification_level:1:progress:54}+4": [
+                        {
+                            "name": "explosion",
+                            "position": [
+                                203,
+                                43,
+                                263
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:1:progress:54}+1": [
+                        {
+                            "name": "explosion",
+                            "position": [
+                                200.5,
+                                41,
+                                258.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:1:progress:54}+2": [
+                        {
+                            "name": "explosion",
+                            "position": [
+                                201.5,
+                                42,
+                                260.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:1:progress:54}+3": [
+                        {
+                            "name": "explosion",
+                            "position": [
+                                202.5,
+                                42,
+                                262.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:1:progress:50}": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                199.5,
+                                43,
+                                260.5
+                            ],
+                            "facing_position": [
+                                197.5,
+                                42,
+                                256.5
+                            ],
+                            "ease_duration": 0
+                        }
+                    ],
+                    "{purification_level:1:progress:54}+34": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                206.5,
+                                45,
+                                266.5
+                            ],
+                            "facing_position": [
+                                218.5,
+                                46,
+                                277.5
+                            ],
+                            "ease_duration": 1.6,
+                            "ease_type": 8
+                        }
+                    ],
+                    "{purification_level:1:progress:54}+60": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                198.5,
+                                40,
+                                277.5
+                            ],
+                            "facing_position": [
+                                198.5,
+                                42,
+                                293.5
+                            ],
+                            "ease_duration": 1,
+                            "ease_type": 9
+                        }
+                    ],
+                    "{purification_level:1:progress:54}+90": [
+                        {
+                            "name": "broadcast_clear_camera_instruction"
+                        },
+                        {
+                            "name": "teleport_players",
+                            "position": [
+                                198.5,
+                                40,
+                                267.5
+                            ],
+                            "yaw": 0,
+                            "pitch": 0
+                        }
+                    ],
+                    "{entity_died_at:boss}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g6"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g4": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 7,
+                    "range": 6,
+                    "is_range_2d": true,
+                    "max_level": 6,
+                    "position": [
+                        132.5,
+                        80,
+                        275.5
+                    ],
+                    "beacon_base_position": [
+                        131,
+                        70,
+                        275
+                    ],
+                    "override_range_by_level": {
+                        "2": 3.5,
+                        "6": 4
+                    },
+                    "fallback_amethyst_power_pool": "all",
+                    "amethyst_power_pool": {
+                        "2": [
+                            "acceleration"
+                        ],
+                        "5": [
+                            "conversion"
+                        ],
+                        "6": [
+                            "static_damage"
+                        ],
+                        "3": [
+                            "enemy_damage"
+                        ],
+                        "4": [
+                            "mystery_potion"
+                        ]
+                    },
+                    "require_energy": {
+                        "1": 340,
+                        "2": 400,
+                        "3": 400,
+                        "4": 20,
+                        "5": 20,
+                        "6": 500
+                    },
+                    "successful_game_actions": [],
+                    "follow_object": false,
+                    "stop_object_navigation": true,
+                    "plane_normal": null
+                },
+                "position": [
+                    129.5,
+                    79,
+                    275.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.2,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": true,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.5,
+                    "attack_damage_multiplier": 1.2,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        167.5,
+                        82,
+                        279.5
+                    ],
+                    [
+                        155.5,
+                        81,
+                        267.5
+                    ],
+                    [
+                        141.5,
+                        82,
+                        258.5
+                    ],
+                    [
+                        118.5,
+                        82,
+                        258.5
+                    ],
+                    [
+                        102.5,
+                        81,
+                        261.5
+                    ],
+                    [
+                        100.5,
+                        81,
+                        298.5
+                    ],
+                    [
+                        134.5,
+                        83,
+                        293.5
+                    ],
+                    [
+                        141.5,
+                        83,
+                        284.5
+                    ],
+                    [
+                        132.5,
+                        80,
+                        275.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            149.5,
+                            87,
+                            279.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:0} + 45",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_scout_lv1",
+                                "count": 1,
+                                "entity_id_variable": "boss"
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.54,
+                                    0.33,
+                                    0.02
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "2": {
+                        "position": [
+                            125.5,
+                            82,
+                            258.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1} + 10",
+                        "pool": [
+                            {
+                                "registry_identifier": "swift_zombie_lv1",
+                                "count": 7
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            83.5,
+                            85,
+                            260.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_archer_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 40,
+                            "additional_drop_loot": [],
+                            "position_offset": [
+                                0,
+                                -3,
+                                0
+                            ],
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            92.5,
+                            85,
+                            269.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4} + 20",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_archer_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 40,
+                            "additional_drop_loot": [],
+                            "position_offset": [
+                                0,
+                                -3,
+                                0
+                            ],
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            84.5,
+                            85,
+                            287.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4} + 40",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_archer_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 40,
+                            "additional_drop_loot": [],
+                            "position_offset": [
+                                0,
+                                -3,
+                                0
+                            ],
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "6": {
+                        "position": [
+                            114.5,
+                            81,
+                            293.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 70,
+                        "count": 10,
+                        "offset": "{relay_point:4} + 300",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    -1.68,
+                                    0.78,
+                                    -0.23
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 0
+                    },
+                    "7": {
+                        "position": [
+                            64.5,
+                            82,
+                            279.5
+                        ],
+                        "max_spawn_offset": [
+                            1,
+                            0,
+                            1
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 15,
+                        "offset": "{relay_point:4} + 480",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.01,
+                                    2.63,
+                                    0.01
+                                ]
+                            },
+                            {
+                                "type": "delayed",
+                                "delay": 20,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            1.6,
+                                            0,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 0
+                    },
+                    "8": {
+                        "position": [
+                            83.5,
+                            81,
+                            260.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{spawner_object_destroyed_at:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "9": {
+                        "position": [
+                            92.5,
+                            81,
+                            269.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{spawner_object_destroyed_at:4}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "10": {
+                        "position": [
+                            84.5,
+                            81,
+                            287.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{spawner_object_destroyed_at:5}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "11": {
+                        "position": [
+                            112.5,
+                            64,
+                            275.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 4,
+                        "offset": "{purification_level:1:progress:3}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "12": {
+                        "position": [
+                            112.5,
+                            64,
+                            275.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 20,
+                        "count": 12,
+                        "offset": "{purification_level:2:progress:1}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "13": {
+                        "position": [
+                            112.5,
+                            64,
+                            275.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            1.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{purification_level:2:progress:30}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 2
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "14": {
+                        "position": [
+                            112.5,
+                            64,
+                            275.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 40,
+                        "count": 4,
+                        "offset": "{purification_level:3:progress:1}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "15": {
+                        "position": [
+                            112.5,
+                            64,
+                            275.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 13,
+                        "offset": "{purification_level:6:progress:1}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "16": {
+                        "position": [
+                            115.5,
+                            82,
+                            275.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 3,
+                        "count": 3,
+                        "offset": "{purification_level:6:progress:35}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.22,
+                                    0.22,
+                                    -0.01
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "17": {
+                        "position": [
+                            113.5,
+                            83,
+                            276.5
+                        ],
+                        "max_spawn_offset": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 3,
+                        "count": 5,
+                        "offset": "{purification_level:6:progress:65}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_golem_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.24,
+                                    0.31,
+                                    -0.02
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "18": {
+                        "position": [
+                            112.5,
+                            64,
+                            275.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 8,
+                        "count": 10,
+                        "offset": "{purification_level:6:progress:50}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_miner_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "swift_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "19": {
+                        "position": [
+                            133.5,
+                            83,
+                            295.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:5}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_soldier_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:0}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{relay_point:0} + 40": [
+                        {
+                            "name": "raytrace_fill_blocks",
+                            "from": [
+                                144.5,
+                                89,
+                                279.5
+                            ],
+                            "to": [
+                                153.5,
+                                89,
+                                279.5
+                            ],
+                            "identifier": "air",
+                            "break": true,
+                            "ray_size": 3,
+                            "sphere_ray": true
+                        }
+                    ],
+                    "{entity_died_at:boss}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{relay_point:4}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:3}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                81,
+                                81,
+                                259
+                            ],
+                            "bb_max": [
+                                84,
+                                86,
+                                262
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                83.5,
+                                85,
+                                260.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:4}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                90,
+                                81,
+                                268
+                            ],
+                            "bb_max": [
+                                93,
+                                86,
+                                271
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                92.5,
+                                85,
+                                269.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:5}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                82,
+                                81,
+                                286
+                            ],
+                            "bb_max": [
+                                85,
+                                86,
+                                289
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                84.5,
+                                85,
+                                287.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:3}&&{spawner_object_destroyed_at:4}&&{spawner_object_destroyed_at:5}": [
+                        {
+                            "name": "resume_object_navigation"
+                        },
+                        {
+                            "name": "cancel_monster_spawn",
+                            "point_number": 7,
+                            "kill_spawned_monsters": true
+                        },
+                        {
+                            "name": "cancel_monster_spawn",
+                            "point_number": 6,
+                            "kill_spawned_monsters": true
+                        }
+                    ],
+                    "{purification_level:level_started_at:4}": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [
+                                132.5,
+                                80,
+                                275.5
+                            ],
+                            "sound_pitch": 1
+                        }
+                    ],
+                    "{purification_level:level_started_at:5}": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [
+                                132.5,
+                                80,
+                                275.5
+                            ],
+                            "sound_pitch": 1.2
+                        }
+                    ],
+                    "{purification_level:6:progress:35}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                121,
+                                79,
+                                272
+                            ],
+                            "bb_max": [
+                                129,
+                                84,
+                                278
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                129.5,
+                                83,
+                                278.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                129.5,
+                                81,
+                                272.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                121.5,
+                                82,
+                                275.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:level_started_at:6}": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [
+                                132.5,
+                                80,
+                                275.5
+                            ],
+                            "sound_pitch": 0.6
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g5"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g3_a": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    169.5,
+                    82,
+                    284.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 0.8,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        222.5,
+                        81,
+                        295.5
+                    ],
+                    [
+                        208.5,
+                        81,
+                        289.5
+                    ],
+                    [
+                        196.5,
+                        83,
+                        295.5
+                    ],
+                    [
+                        175.5,
+                        81,
+                        292.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            195.5,
+                            82,
+                            303.5
+                        ],
+                        "max_spawn_offset": [
+                            1.5,
+                            0,
+                            1.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 4
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "freeze",
+                                "duration": 100
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "2": {
+                        "position": [
+                            173.5,
+                            81,
+                            292.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2} + 10",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_soldier_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 20,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": [],
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g4"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g3_b": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 2,
+                    "range": 6,
+                    "is_range_2d": true,
+                    "max_level": 1,
+                    "position": [
+                        192.5,
+                        81,
+                        270.5
+                    ],
+                    "beacon_base_position": [
+                        193,
+                        64,
+                        270
+                    ],
+                    "override_range_by_level": [],
+                    "fallback_amethyst_power_pool": [],
+                    "amethyst_power_pool": [],
+                    "require_energy": {
+                        "1": 800
+                    },
+                    "successful_game_actions": [],
+                    "follow_object": false,
+                    "stop_object_navigation": true,
+                    "plane_normal": null
+                },
+                "position": [
+                    169.5,
+                    82,
+                    285.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.17,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": true,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.2,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        225.5,
+                        82,
+                        279.5
+                    ],
+                    [
+                        210.5,
+                        80,
+                        277.5
+                    ],
+                    [
+                        193.5,
+                        81,
+                        270.5
+                    ],
+                    [
+                        188.5,
+                        80,
+                        270.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            189.5,
+                            76,
+                            253.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_archer_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    6,
+                                    5,
+                                    0
+                                ],
+                                "lerp_ticks": 40,
+                                "cancel_suffocation_damage": false
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 70
+                            },
+                            {
+                                "type": "delayed",
+                                "delay": 70,
+                                "after": [
+                                    {
+                                        "type": "lerp",
+                                        "lerp_type": "manual",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "vector": [
+                                            -8,
+                                            -5,
+                                            0
+                                        ],
+                                        "lerp_ticks": 15,
+                                        "cancel_suffocation_damage": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "2": {
+                        "position": [
+                            189.5,
+                            76,
+                            253.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            1
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 30,
+                        "count": 20,
+                        "offset": "{relay_point:2}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    7,
+                                    5,
+                                    0
+                                ],
+                                "lerp_ticks": 15,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            184.5,
+                            78,
+                            261.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 30,
+                        "count": 3,
+                        "offset": "{purification_level:1:progress:10} + 1",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    7,
+                                    0
+                                ],
+                                "lerp_ticks": 20,
+                                "cancel_suffocation_damage": false
+                            },
+                            {
+                                "type": "delayed",
+                                "delay": 21,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0.11,
+                                            -0.01,
+                                            0.14
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            174.5,
+                            81,
+                            294.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_soldier_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.03,
+                                    0.58,
+                                    -1.23
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:1}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{relay_point:1} + 86": [
+                        {
+                            "name": "kill_remaining_monsters"
+                        },
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{purification_level:1:progress:10}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                184,
+                                77,
+                                261
+                            ],
+                            "bb_max": [
+                                184,
+                                83,
+                                261
+                            ],
+                            "identifier": "ladder",
+                            "break": false
+                        }
+                    ],
+                    "{relay_point:3}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:4}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g4"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g2": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "objective",
+                "level": {
+                    "objectives": {
+                        "1": {
+                            "time_limit": 600,
+                            "successful_game_actions": [
+                                {
+                                    "name": "health_boost_villager",
+                                    "amount": 5
+                                }
+                            ],
+                            "failure_game_actions": [],
+                            "clear_game_actions": [
+                                {
+                                    "name": "objective_level_next"
+                                },
+                                {
+                                    "name": "notify_timestamp",
+                                    "id": "ended_suppress"
+                                }
+                            ],
+                            "spawner_ids": {
+                                "3": 3
+                            },
+                            "progress_text": "左の噴出口を抑制中... 残り %d秒",
+                            "clear_text": "左の噴出口の抑制に成功",
+                            "end_if_failed": false
+                        },
+                        "2": {
+                            "time_limit": 600,
+                            "successful_game_actions": [
+                                {
+                                    "name": "health_boost_villager",
+                                    "amount": 5
+                                }
+                            ],
+                            "failure_game_actions": [],
+                            "clear_game_actions": [
+                                {
+                                    "name": "objective_level_next"
+                                },
+                                {
+                                    "name": "resume_object_navigation"
+                                }
+                            ],
+                            "spawner_ids": {
+                                "4": 4
+                            },
+                            "progress_text": "右の噴出口を抑制中... 残り %d秒",
+                            "clear_text": "右の噴出口の抑制に成功",
+                            "end_if_failed": false
+                        }
+                    },
+                    "successful_game_actions": [],
+                    "failure_game_actions": [],
+                    "is_sequentially": true,
+                    "manual": true
+                },
+                "position": [
+                    230.5,
+                    83,
+                    285.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.17,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.2,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        259.5,
+                        67,
+                        250.5
+                    ],
+                    [
+                        254.5,
+                        71,
+                        253.5
+                    ],
+                    [
+                        254.5,
+                        74,
+                        256.5
+                    ],
+                    [
+                        254.5,
+                        76,
+                        259.5
+                    ],
+                    [
+                        252.5,
+                        76,
+                        259.5
+                    ],
+                    [
+                        252.5,
+                        78,
+                        257.5
+                    ],
+                    [
+                        252.5,
+                        80,
+                        254.5
+                    ],
+                    [
+                        248.5,
+                        82,
+                        256.5
+                    ],
+                    [
+                        242.5,
+                        81,
+                        258.5
+                    ],
+                    [
+                        241.5,
+                        81,
+                        264.5
+                    ],
+                    [
+                        239.5,
+                        82,
+                        278.5
+                    ],
+                    [
+                        234.5,
+                        83,
+                        286.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            241.5,
+                            81,
+                            258.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:6}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 10
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "2": {
+                        "position": [
+                            223.5,
+                            83,
+                            262.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 7,
+                        "offset": "{relay_point:9}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.87,
+                                    1.03,
+                                    0
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            214.5,
+                            81,
+                            294.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 80,
+                        "count": 12,
+                        "offset": "{relay_point:11}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "swift_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    2,
+                                    0
+                                ],
+                                "lerp_ticks": 20,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "spawner_object_info": {
+                            "max_health": 60,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            214.5,
+                            80,
+                            274.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 80,
+                        "count": 10,
+                        "offset": "{ended_suppress}+60",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_zombie_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            237.5,
+                            83,
+                            285.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:9}",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_soldier_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:11}": [
+                        {
+                            "name": "stop_object_navigation"
+                        },
+                        {
+                            "name": "objective_level_start"
+                        }
+                    ],
+                    "{relay_point:6}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:1}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g3_a"
+                },
+                {
+                    "serialize_type": "reference",
+                    "reference": "g3_b"
+                }
+            ],
+            "vote_positions": [
+                [
+                    226.5,
+                    82,
+                    290.5
+                ],
+                [
+                    225.5,
+                    82,
+                    279.5
+                ]
+            ],
+            "vote_names": {
+                "1": "鉱山 に向かう (危険)",
+                "0": "ラウンジ に向かう (安全)"
+            }
+        },
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    267.5,
+                    65,
+                    251.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.2,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        287.5,
+                        51,
+                        364.5
+                    ],
+                    [
+                        282.5,
+                        53,
+                        346.5
+                    ],
+                    [
+                        282.5,
+                        64,
+                        322.5
+                    ],
+                    [
+                        283.5,
+                        64,
+                        306.5
+                    ],
+                    [
+                        266.5,
+                        64,
+                        299.5
+                    ],
+                    [
+                        277.5,
+                        64,
+                        257.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            261.5,
+                            64,
+                            302.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 4,
+                        "offset": "{relay_point:2}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.1,
+                                    0
+                                ],
+                                "lerp_ticks": 12,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            260.5,
+                            65,
+                            285.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4} + 5",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_miner_lv1",
+                                "count": 6
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.75,
+                                    0.4,
+                                    0
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            248.5,
+                            82,
+                            257.5
+                        ],
+                        "max_spawn_offset": [
+                            2,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 40,
+                        "count": 10,
+                        "offset": "{relay_point:4}",
+                        "increment": 2,
+                        "pool": [
+                            {
+                                "registry_identifier": "swift_zombie_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.94,
+                                    0.2,
+                                    0.03
+                                ]
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            287.5,
+                            64,
+                            268.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 2,
+                        "offset": "{spawner_monsters_eliminated_at:3}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_archer_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    4.1,
+                                    5
+                                ],
+                                "lerp_ticks": 20,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:4}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                258,
+                                65,
+                                283
+                            ],
+                            "bb_max": [
+                                263,
+                                68,
+                                286
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:3}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                269,
+                                64,
+                                276
+                            ],
+                            "bb_max": [
+                                288,
+                                65,
+                                279
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g2"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        }
+    },
+    "monster_point_references": []
+}

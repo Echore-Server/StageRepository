@@ -1,0 +1,5130 @@
+{
+    "name": "Pyramid",
+    "world_folder_name": "stage3",
+    "identifier": "pyramid",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "global_stage_level": 0,
+    "story_info": {
+        "checkpoint_node": "g4",
+        "raid_nodes": {
+            "pyramid": {
+                "reference": "raid1",
+                "parent_reference": "g2",
+                "vote_position": [
+                    258.5,
+                    67,
+                    115.5
+                ]
+            }
+        }
+    },
+    "version": "1.20",
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": [],
+            "position": [
+                232.5,
+                67,
+                281.5
+            ],
+            "spawn_position": null,
+            "object_speed": 0.15,
+            "require_object_arrival": true,
+            "roll_amethyst_power": false,
+            "can_monsters_attack_object": false,
+            "monster_stats_modifier": {
+                "health_multiplier": 1,
+                "attack_damage_multiplier": 1,
+                "movement_speed_multiplier": 1
+            },
+            "relay_points": [],
+            "monster_points": [],
+            "static_monster_points": [],
+            "border_blocks": [],
+            "game_action_timestamp": [],
+            "object_navigation_rules": "normal"
+        },
+        "children": [
+            {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        ],
+        "vote_positions": [],
+        "vote_names": []
+    },
+    "object_position": [
+        232.5,
+        67,
+        281.5
+    ],
+    "spawn_position": [
+        232.5,
+        67,
+        281.5
+    ],
+    "node_references": {
+        "g8": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 1,
+                    "range": 13,
+                    "is_range_2d": false,
+                    "max_level": 4,
+                    "position": [
+                        231.5,
+                        68,
+                        96.5
+                    ],
+                    "beacon_base_position": [
+                        231,
+                        66,
+                        96
+                    ],
+                    "override_range_by_level": {
+                        "1": 13,
+                        "2": 12,
+                        "3": 11,
+                        "4": 9
+                    },
+                    "fallback_amethyst_power_pool": [],
+                    "amethyst_power_pool": [],
+                    "require_energy": {
+                        "1": 300,
+                        "2": 400,
+                        "3": 500,
+                        "4": 500
+                    },
+                    "successful_game_actions": [],
+                    "follow_object": false,
+                    "plane_normal": null
+                },
+                "position": [
+                    231.5,
+                    67,
+                    116.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": true,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.7,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        231.5,
+                        50,
+                        96.5
+                    ],
+                    [
+                        231.5,
+                        70,
+                        99.5
+                    ]
+                ],
+                "monster_points": [
+                    {
+                        "position": [
+                            235.5,
+                            69,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{purification_level:1:progress:4}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            69,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 50,
+                        "count": 4,
+                        "offset": "{purification_level:1:progress:25}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            69,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 45,
+                        "count": 5,
+                        "offset": "{purification_level:2:progress:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            69,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 40,
+                        "count": 7,
+                        "offset": "{purification_level:3:progress:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            69,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 60,
+                        "count": 4,
+                        "offset": "{purification_level:4:progress:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            69,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 40,
+                        "count": 5,
+                        "offset": "{purification_level:4:progress:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            69,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 50,
+                        "count": 5,
+                        "offset": "{purification_level:4:progress:30}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    }
+                ],
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:0} + 20": [
+                        {
+                            "name": "skip_current_object_navigation"
+                        },
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{relay_point:1} + 10": [
+                        {
+                            "name": "teleport_players",
+                            "position": [
+                                231.5,
+                                70,
+                                99.5
+                            ]
+                        }
+                    ],
+                    "5": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                236,
+                                68,
+                                79
+                            ],
+                            "bb_max": [
+                                247,
+                                82,
+                                111
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                215,
+                                68,
+                                102
+                            ],
+                            "bb_max": [
+                                236,
+                                82,
+                                113
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                215,
+                                68,
+                                79
+                            ],
+                            "bb_max": [
+                                226,
+                                82,
+                                102
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                226,
+                                68,
+                                79
+                            ],
+                            "bb_max": [
+                                247,
+                                82,
+                                91
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                226,
+                                78,
+                                90
+                            ],
+                            "bb_max": [
+                                236,
+                                82,
+                                102
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{relay_point:0}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g7": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    238.5,
+                    50,
+                    96.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        203.5,
+                        50,
+                        80.5
+                    ],
+                    [
+                        203.5,
+                        50,
+                        91.5
+                    ],
+                    [
+                        198.5,
+                        50,
+                        96.5
+                    ],
+                    [
+                        198.5,
+                        50,
+                        102.5
+                    ],
+                    [
+                        201.5,
+                        50,
+                        107.5
+                    ],
+                    [
+                        201.5,
+                        50,
+                        129.5
+                    ],
+                    [
+                        238.5,
+                        50,
+                        129.5
+                    ]
+                ],
+                "monster_points": {
+                    "7": {
+                        "position": [
+                            201.5,
+                            56,
+                            102.5
+                        ],
+                        "max_spawn_offset": [
+                            1,
+                            0,
+                            1
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3} + 15",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    1,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    -1.5,
+                                    0
+                                ],
+                                "lerp_ticks": 50,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "6": {
+                        "position": [
+                            198.5,
+                            50,
+                            126.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0,
+                                            0.5,
+                                            -2.75
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "5": {
+                        "position": [
+                            199.5,
+                            50,
+                            126.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0,
+                                            0.5,
+                                            -2.75
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "4": {
+                        "position": [
+                            200.5,
+                            50,
+                            126.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0,
+                                            0.5,
+                                            -2.75
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "3": {
+                        "position": [
+                            201.5,
+                            50,
+                            126.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0,
+                                            0.5,
+                                            -2.75
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "2": {
+                        "position": [
+                            202.5,
+                            50,
+                            126.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0,
+                                            0.5,
+                                            -2.75
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "1": {
+                        "position": [
+                            203.5,
+                            50,
+                            126.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0,
+                                            0.5,
+                                            -2.75
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "0": {
+                        "position": [
+                            204.5,
+                            50,
+                            126.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            0,
+                                            0.5,
+                                            -2.75
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "10": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                215,
+                                50,
+                                78
+                            ],
+                            "bb_max": [
+                                215,
+                                53,
+                                82
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{relay_point:0} + 10": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                202,
+                                50,
+                                86
+                            ],
+                            "bb_max": [
+                                205,
+                                51,
+                                86
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "{relay_point:2} + 10": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                197,
+                                50,
+                                98
+                            ],
+                            "bb_max": [
+                                199,
+                                51,
+                                98
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "{relay_point:3} + 5": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                198,
+                                50,
+                                110
+                            ],
+                            "bb_max": [
+                                204,
+                                50,
+                                110
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "{relay_point:3} + 10": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                198,
+                                51,
+                                110
+                            ],
+                            "bb_max": [
+                                204,
+                                51,
+                                110
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "{relay_point:3} + 15": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                198,
+                                52,
+                                110
+                            ],
+                            "bb_max": [
+                                204,
+                                52,
+                                110
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "{relay_point:3} + 20": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                198,
+                                53,
+                                110
+                            ],
+                            "bb_max": [
+                                204,
+                                53,
+                                110
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g8"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g6": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    217.5,
+                    50,
+                    80.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 0.9,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        228.5,
+                        50,
+                        68.5
+                    ],
+                    [
+                        228.5,
+                        50,
+                        81.5
+                    ]
+                ],
+                "monster_points": {
+                    "22": {
+                        "position": [
+                            246.5,
+                            65,
+                            200.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 80,
+                        "count": 3,
+                        "offset": "{spawner_monsters_eliminated_at:19} + 260",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    "21": {
+                        "position": [
+                            246.5,
+                            35,
+                            200.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 60,
+                        "count": 6,
+                        "offset": "{spawner_monsters_eliminated_at:19} + 260",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    },
+                    "20": {
+                        "position": [
+                            246.5,
+                            65,
+                            200.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 80,
+                        "count": 3,
+                        "offset": "{spawner_monsters_eliminated_at:17} + 260",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    "19": {
+                        "position": [
+                            246.5,
+                            23,
+                            200.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 60,
+                        "count": 6,
+                        "offset": "{spawner_monsters_eliminated_at:17} + 260",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    },
+                    "17": {
+                        "position": [
+                            246.5,
+                            11,
+                            200.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 40,
+                        "count": 8,
+                        "offset": "{desert_owl:phase:3} + 940",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    },
+                    "16": {
+                        "position": [
+                            234.5,
+                            -9,
+                            198.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            3,
+                            16.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{desert_owl:phase:2} + 300",
+                        "pool": [
+                            {
+                                "registry_identifier": "axe_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    -2,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0.5,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 12,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "15": {
+                        "position": [
+                            234.5,
+                            -9,
+                            198.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            3,
+                            16.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 300,
+                        "count": 3,
+                        "offset": "{desert_owl:phase:2} + 260",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "sweeping_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    -2,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0.5,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 12,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "14": {
+                        "position": [
+                            234.5,
+                            -9,
+                            198.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            3,
+                            16.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 200,
+                        "count": 2,
+                        "offset": "{desert_owl:phase:2} + 260",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    -2,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0.5,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 12,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "13": {
+                        "position": [
+                            234.5,
+                            -9,
+                            198.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            3,
+                            16.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 200,
+                        "count": 2,
+                        "offset": "{desert_owl:phase:2} + 160",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "magician_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    -2,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0.5,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 12,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "12": {
+                        "position": [
+                            239.5,
+                            -8,
+                            215.5
+                        ],
+                        "max_spawn_offset": [
+                            6,
+                            2,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 170,
+                        "count": 6,
+                        "offset": "{desert_owl:phase:2} + 100",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    2
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    -0.5
+                                ],
+                                "lerp_ticks": 12,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "11": {
+                        "position": [
+                            246.5,
+                            -8,
+                            215.5
+                        ],
+                        "max_spawn_offset": [
+                            11,
+                            2,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 20,
+                        "count": 20,
+                        "offset": "{desert_owl:phase:1} + 20",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    2
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    -0.5
+                                ],
+                                "lerp_ticks": 12,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "10": {
+                        "position": [
+                            246.5,
+                            -4,
+                            214.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 15,
+                        "count": 2,
+                        "offset": "{desert_owl:trust:2}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    -0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "9": {
+                        "position": [
+                            246.5,
+                            -4,
+                            214.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 15,
+                        "count": 3,
+                        "offset": "{desert_owl:trust:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "magician_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    -0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "8": {
+                        "position": [
+                            251.5,
+                            -13,
+                            211.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 9,
+                        "count": 2,
+                        "offset": "{desert_owl:trust:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "axe_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "7": {
+                        "position": [
+                            241.5,
+                            -13,
+                            211.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 9,
+                        "count": 3,
+                        "offset": "{desert_owl:trust:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "armored_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "6": {
+                        "position": [
+                            241.5,
+                            -13,
+                            211.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 9,
+                        "count": 6,
+                        "offset": "{desert_owl:trust:20}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "5": {
+                        "position": [
+                            251.5,
+                            -13,
+                            211.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 9,
+                        "count": 4,
+                        "offset": "{desert_owl:trust:20}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "sweeping_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "4": {
+                        "position": [
+                            251.5,
+                            -13,
+                            211.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 9,
+                        "count": 4,
+                        "offset": "{relay_point:1} + 30",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "3": {
+                        "position": [
+                            252.5,
+                            -13,
+                            187.5
+                        ],
+                        "max_spawn_offset": [
+                            6,
+                            0,
+                            6
+                        ],
+                        "spawn_type": "once",
+                        "tick": 0,
+                        "pool": [],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": "field"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    },
+                    "2": {
+                        "position": [
+                            246.5,
+                            -4,
+                            214.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 50,
+                        "count": 2,
+                        "offset": "{relay_point:1} + 30",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    -0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "1": {
+                        "position": [
+                            241.5,
+                            -13,
+                            211.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 9,
+                        "count": 4,
+                        "offset": "{relay_point:1} + 30",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 8,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "0": {
+                        "position": [
+                            246.5,
+                            -11,
+                            214.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1} + 20",
+                        "pool": [
+                            {
+                                "registry_identifier": "desert_owl_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:1} + 1": [
+                        {
+                            "name": "teleport_players",
+                            "position": [
+                                246.5,
+                                -13,
+                                182.5
+                            ]
+                        },
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{desert_owl:phase:1}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                254,
+                                -13,
+                                180
+                            ],
+                            "bb_max": [
+                                255,
+                                -5,
+                                215
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                237,
+                                -13,
+                                180
+                            ],
+                            "bb_max": [
+                                238,
+                                -5,
+                                215
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "{desert_owl:phase:2} + 20": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                246,
+                                -14,
+                                180
+                            ],
+                            "bb_max": [
+                                258,
+                                -14,
+                                215
+                            ],
+                            "identifier": "redstone_block",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                246,
+                                -13,
+                                180
+                            ],
+                            "bb_max": [
+                                248,
+                                -13,
+                                207
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:2} + 100": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                246,
+                                -14,
+                                180
+                            ],
+                            "bb_max": [
+                                258,
+                                -14,
+                                215
+                            ],
+                            "identifier": "lava",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 30": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -13,
+                                211
+                            ],
+                            "bb_max": [
+                                252,
+                                -10,
+                                215
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 100": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                234,
+                                -4,
+                                180
+                            ],
+                            "bb_max": [
+                                258,
+                                -3,
+                                215
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 120": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                249,
+                                -13,
+                                184
+                            ],
+                            "bb_max": [
+                                252,
+                                -13,
+                                187
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                250,
+                                -13,
+                                185
+                            ],
+                            "bb_max": [
+                                251,
+                                -13,
+                                186
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                249,
+                                -12,
+                                184
+                            ],
+                            "bb_max": [
+                                252,
+                                -12,
+                                187
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 200": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                249,
+                                -12,
+                                190
+                            ],
+                            "bb_max": [
+                                252,
+                                -12,
+                                193
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                250,
+                                -12,
+                                191
+                            ],
+                            "bb_max": [
+                                251,
+                                -12,
+                                192
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                249,
+                                -11,
+                                190
+                            ],
+                            "bb_max": [
+                                252,
+                                -11,
+                                193
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 260": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                244,
+                                -11,
+                                195
+                            ],
+                            "bb_max": [
+                                247,
+                                -11,
+                                198
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                245,
+                                -11,
+                                196
+                            ],
+                            "bb_max": [
+                                246,
+                                -11,
+                                197
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                244,
+                                -10,
+                                195
+                            ],
+                            "bb_max": [
+                                247,
+                                -10,
+                                198
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 320": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -10,
+                                201
+                            ],
+                            "bb_max": [
+                                244,
+                                -10,
+                                204
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                242,
+                                -10,
+                                202
+                            ],
+                            "bb_max": [
+                                243,
+                                -10,
+                                203
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -9,
+                                201
+                            ],
+                            "bb_max": [
+                                244,
+                                -9,
+                                204
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 380": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                247,
+                                -9,
+                                205
+                            ],
+                            "bb_max": [
+                                250,
+                                -9,
+                                208
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                248,
+                                -9,
+                                206
+                            ],
+                            "bb_max": [
+                                249,
+                                -9,
+                                207
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                247,
+                                -8,
+                                205
+                            ],
+                            "bb_max": [
+                                250,
+                                -8,
+                                208
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                234,
+                                -13,
+                                180
+                            ],
+                            "bb_max": [
+                                258,
+                                -13,
+                                215
+                            ],
+                            "identifier": "lava",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 440": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                251,
+                                -8,
+                                199
+                            ],
+                            "bb_max": [
+                                254,
+                                -8,
+                                202
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                252,
+                                -8,
+                                200
+                            ],
+                            "bb_max": [
+                                253,
+                                -8,
+                                201
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                251,
+                                -7,
+                                199
+                            ],
+                            "bb_max": [
+                                254,
+                                -7,
+                                202
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 500": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                247,
+                                -7,
+                                193
+                            ],
+                            "bb_max": [
+                                250,
+                                -7,
+                                196
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                248,
+                                -7,
+                                194
+                            ],
+                            "bb_max": [
+                                249,
+                                -7,
+                                195
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                247,
+                                -6,
+                                193
+                            ],
+                            "bb_max": [
+                                250,
+                                -6,
+                                196
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 560": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -5,
+                                187
+                            ],
+                            "bb_max": [
+                                244,
+                                -5,
+                                190
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                242,
+                                -5,
+                                188
+                            ],
+                            "bb_max": [
+                                243,
+                                -5,
+                                189
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -4,
+                                187
+                            ],
+                            "bb_max": [
+                                244,
+                                -4,
+                                190
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 620": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -3,
+                                194
+                            ],
+                            "bb_max": [
+                                244,
+                                -3,
+                                197
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                242,
+                                -3,
+                                195
+                            ],
+                            "bb_max": [
+                                243,
+                                -3,
+                                196
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -2,
+                                194
+                            ],
+                            "bb_max": [
+                                244,
+                                -2,
+                                197
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 680": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                -1,
+                                201
+                            ],
+                            "bb_max": [
+                                244,
+                                -1,
+                                204
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                242,
+                                -1,
+                                202
+                            ],
+                            "bb_max": [
+                                243,
+                                -1,
+                                203
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                0,
+                                201
+                            ],
+                            "bb_max": [
+                                244,
+                                0,
+                                204
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 740": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                248,
+                                1,
+                                202
+                            ],
+                            "bb_max": [
+                                251,
+                                1,
+                                205
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                249,
+                                1,
+                                203
+                            ],
+                            "bb_max": [
+                                250,
+                                1,
+                                204
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                248,
+                                2,
+                                202
+                            ],
+                            "bb_max": [
+                                251,
+                                2,
+                                205
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 800": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                252,
+                                4,
+                                195
+                            ],
+                            "bb_max": [
+                                255,
+                                4,
+                                198
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                253,
+                                4,
+                                196
+                            ],
+                            "bb_max": [
+                                254,
+                                4,
+                                197
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                252,
+                                5,
+                                195
+                            ],
+                            "bb_max": [
+                                255,
+                                5,
+                                198
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 860": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                247,
+                                7,
+                                190
+                            ],
+                            "bb_max": [
+                                250,
+                                7,
+                                193
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                248,
+                                7,
+                                191
+                            ],
+                            "bb_max": [
+                                249,
+                                7,
+                                192
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                247,
+                                8,
+                                190
+                            ],
+                            "bb_max": [
+                                250,
+                                8,
+                                193
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:phase:3} + 920": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                10,
+                                195
+                            ],
+                            "bb_max": [
+                                251,
+                                10,
+                                205
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                242,
+                                10,
+                                196
+                            ],
+                            "bb_max": [
+                                250,
+                                10,
+                                204
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                11,
+                                195
+                            ],
+                            "bb_max": [
+                                251,
+                                11,
+                                205
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:17} + 60": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                251,
+                                13,
+                                208
+                            ],
+                            "bb_max": [
+                                254,
+                                13,
+                                211
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                252,
+                                13,
+                                209
+                            ],
+                            "bb_max": [
+                                253,
+                                13,
+                                210
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                251,
+                                14,
+                                208
+                            ],
+                            "bb_max": [
+                                254,
+                                14,
+                                211
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:17} + 120": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                245,
+                                16,
+                                208
+                            ],
+                            "bb_max": [
+                                248,
+                                16,
+                                211
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                246,
+                                16,
+                                209
+                            ],
+                            "bb_max": [
+                                247,
+                                16,
+                                210
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                245,
+                                17,
+                                208
+                            ],
+                            "bb_max": [
+                                248,
+                                17,
+                                211
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:17} + 180": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                239,
+                                19,
+                                208
+                            ],
+                            "bb_max": [
+                                242,
+                                19,
+                                211
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                240,
+                                19,
+                                209
+                            ],
+                            "bb_max": [
+                                241,
+                                19,
+                                210
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                239,
+                                20,
+                                208
+                            ],
+                            "bb_max": [
+                                242,
+                                20,
+                                211
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:17} + 240": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                22,
+                                195
+                            ],
+                            "bb_max": [
+                                251,
+                                22,
+                                205
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                242,
+                                22,
+                                196
+                            ],
+                            "bb_max": [
+                                250,
+                                22,
+                                204
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                23,
+                                195
+                            ],
+                            "bb_max": [
+                                251,
+                                23,
+                                205
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:19} + 60": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                238,
+                                25,
+                                190
+                            ],
+                            "bb_max": [
+                                241,
+                                25,
+                                193
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                239,
+                                25,
+                                191
+                            ],
+                            "bb_max": [
+                                240,
+                                25,
+                                192
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                238,
+                                26,
+                                190
+                            ],
+                            "bb_max": [
+                                241,
+                                26,
+                                193
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:19} + 120": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                244,
+                                28,
+                                190
+                            ],
+                            "bb_max": [
+                                247,
+                                28,
+                                193
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                245,
+                                28,
+                                191
+                            ],
+                            "bb_max": [
+                                246,
+                                28,
+                                192
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                244,
+                                29,
+                                190
+                            ],
+                            "bb_max": [
+                                247,
+                                29,
+                                193
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:19} + 180": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                250,
+                                31,
+                                190
+                            ],
+                            "bb_max": [
+                                253,
+                                31,
+                                193
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                251,
+                                31,
+                                191
+                            ],
+                            "bb_max": [
+                                252,
+                                31,
+                                192
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                250,
+                                32,
+                                190
+                            ],
+                            "bb_max": [
+                                253,
+                                32,
+                                193
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:19} + 240": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                34,
+                                195
+                            ],
+                            "bb_max": [
+                                251,
+                                34,
+                                205
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                242,
+                                34,
+                                196
+                            ],
+                            "bb_max": [
+                                250,
+                                34,
+                                204
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                241,
+                                35,
+                                195
+                            ],
+                            "bb_max": [
+                                251,
+                                35,
+                                205
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:21} + 60": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                251,
+                                37,
+                                208
+                            ],
+                            "bb_max": [
+                                254,
+                                37,
+                                211
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                252,
+                                37,
+                                209
+                            ],
+                            "bb_max": [
+                                253,
+                                37,
+                                210
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                251,
+                                38,
+                                208
+                            ],
+                            "bb_max": [
+                                254,
+                                38,
+                                211
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:21} + 120": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                245,
+                                40,
+                                208
+                            ],
+                            "bb_max": [
+                                248,
+                                40,
+                                211
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                246,
+                                40,
+                                209
+                            ],
+                            "bb_max": [
+                                247,
+                                40,
+                                210
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                245,
+                                41,
+                                208
+                            ],
+                            "bb_max": [
+                                248,
+                                41,
+                                211
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:21} + 180": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                239,
+                                43,
+                                208
+                            ],
+                            "bb_max": [
+                                242,
+                                43,
+                                211
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                240,
+                                43,
+                                209
+                            ],
+                            "bb_max": [
+                                241,
+                                43,
+                                210
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                239,
+                                44,
+                                208
+                            ],
+                            "bb_max": [
+                                242,
+                                44,
+                                211
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:arrived_top}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                239,
+                                46,
+                                191
+                            ],
+                            "bb_max": [
+                                253,
+                                46,
+                                205
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                240,
+                                46,
+                                192
+                            ],
+                            "bb_max": [
+                                251,
+                                46,
+                                204
+                            ],
+                            "identifier": "sea_lantern",
+                            "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                239,
+                                47,
+                                191
+                            ],
+                            "bb_max": [
+                                253,
+                                47,
+                                205
+                            ],
+                            "identifier": "orange_carpet",
+                            "break": false
+                        }
+                    ],
+                    "{desert_owl:final}": [
+                        {
+                            "name": "teleport_players",
+                            "position": [
+                                228.5,
+                                50,
+                                81.5
+                            ]
+                        },
+                        {
+                            "name": "teleport_villager",
+                            "position": [
+                                228.5,
+                                50,
+                                81.5
+                            ]
+                        }
+                    ],
+                    "{desert_owl:final} + 60": [
+                        {
+                            "name": "resume_object_navigation"
+                        },
+                        {
+                            "name": "kill_remaining_monsters"
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g7"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g5": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    228.5,
+                    50,
+                    44.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 2.25,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        231.5,
+                        67,
+                        56.5
+                    ],
+                    [
+                        236.5,
+                        67,
+                        52.5
+                    ],
+                    [
+                        238.5,
+                        69,
+                        46.5
+                    ],
+                    [
+                        231.5,
+                        74,
+                        44.5
+                    ],
+                    [
+                        235.5,
+                        75,
+                        37.5
+                    ],
+                    [
+                        241.5,
+                        75,
+                        30.5
+                    ],
+                    [
+                        232.5,
+                        76,
+                        25.5
+                    ],
+                    [
+                        216.5,
+                        74,
+                        21.5
+                    ],
+                    [
+                        198.5,
+                        69,
+                        20.5
+                    ],
+                    [
+                        198.5,
+                        50,
+                        41.5
+                    ],
+                    [
+                        198.5,
+                        50,
+                        44.5
+                    ],
+                    [
+                        214.5,
+                        50,
+                        44.5
+                    ]
+                ],
+                "monster_points": {
+                    "7": {
+                        "position": [
+                            237.5,
+                            50,
+                            44.5
+                        ],
+                        "max_spawn_offset": [
+                            1.5,
+                            0,
+                            1.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:11}",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 3
+                            },
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "delayed",
+                                "delay": 30,
+                                "after": [
+                                    {
+                                        "type": "motion",
+                                        "motion": [
+                                            -0.9,
+                                            0.55,
+                                            0
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 29
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "6": {
+                        "position": [
+                            228.5,
+                            50.05,
+                            50.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 3,
+                        "offset": "{relay_point:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    -5.5
+                                ],
+                                "lerp_ticks": 10,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "5": {
+                        "position": [
+                            198.5,
+                            50,
+                            41.5
+                        ],
+                        "max_spawn_offset": [
+                            0.5,
+                            0,
+                            0.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:8}",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 4
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    "4": {
+                        "position": [
+                            207.5,
+                            86,
+                            30.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 10,
+                        "count": 10,
+                        "offset": "{relay_point:7}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 1,
+                                "radius_max": 6,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "3": {
+                        "position": [
+                            190.5,
+                            84,
+                            19.5
+                        ],
+                        "max_spawn_offset": [
+                            0.7,
+                            0,
+                            0.7
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:7} + 2",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 3
+                            },
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 2
+                            },
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    1.2,
+                                    0.4,
+                                    0
+                                ]
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "2": {
+                        "position": [
+                            223.5,
+                            78,
+                            22.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4}",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 3
+                            },
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 1,
+                                "radius_max": 4,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "1": {
+                        "position": [
+                            198.5,
+                            69,
+                            20.5
+                        ],
+                        "max_spawn_offset": [
+                            0.7,
+                            0.7,
+                            0.7
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 12,
+                        "count": 4,
+                        "offset": "{relay_point:4} + 40",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    1.5,
+                                    1.5,
+                                    0
+                                ]
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    "0": {
+                        "position": [
+                            231.5,
+                            75,
+                            52.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": 10,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 4
+                            },
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 4
+                            },
+                            {
+                                "registry_identifier": "sweeping_husk_lv1",
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 1,
+                                "radius_max": 7,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:7}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                193,
+                                82,
+                                18
+                            ],
+                            "bb_max": [
+                                193,
+                                86,
+                                20
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                193.5,
+                                84,
+                                19.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{relay_point:11}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                231,
+                                50,
+                                42
+                            ],
+                            "bb_max": [
+                                231,
+                                50,
+                                46
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{relay_point:11} + 9": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                231,
+                                51,
+                                42
+                            ],
+                            "bb_max": [
+                                231,
+                                51,
+                                46
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{relay_point:11} + 9 * 2": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                231,
+                                52,
+                                42
+                            ],
+                            "bb_max": [
+                                231,
+                                52,
+                                46
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{relay_point:11} + 9 * 3": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                231,
+                                53,
+                                42
+                            ],
+                            "bb_max": [
+                                231,
+                                53,
+                                46
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ],
+                    "{relay_point:10} + 5": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{relay_point:9}": [
+                        {
+                            "name": "interact_block",
+                            "position": [
+                                198,
+                                50,
+                                43
+                            ]
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:6}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g6"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g4": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 1,
+                    "range": 6,
+                    "is_range_2d": false,
+                    "max_level": 3,
+                    "position": [
+                        231.5,
+                        79,
+                        96.5
+                    ],
+                    "beacon_base_position": [
+                        231,
+                        66,
+                        96
+                    ],
+                    "override_range_by_level": [],
+                    "fallback_amethyst_power_pool": [
+                        "invisible_health"
+                    ],
+                    "amethyst_power_pool": [],
+                    "require_energy": {
+                        "1": 300,
+                        "2": 400,
+                        "3": 500
+                    },
+                    "successful_game_actions": [],
+                    "follow_object": false,
+                    "plane_normal": null
+                },
+                "position": [
+                    231.5,
+                    67,
+                    77.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": true,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.6,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": {
+                    "1": [
+                        231.5,
+                        79,
+                        97.5
+                    ]
+                },
+                "monster_points": [
+                    {
+                        "position": [
+                            235.5,
+                            79,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{purification_level:1:progress:4}",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            79,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 50,
+                        "count": 4,
+                        "offset": "{purification_level:1:progress:25}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            79,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 45,
+                        "count": 5,
+                        "offset": "{purification_level:2:progress:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            235.5,
+                            79,
+                            98.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 40,
+                        "count": 7,
+                        "offset": "{purification_level:3:progress:10}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 16,
+                                "radius_max": 22,
+                                "adjust_y": true,
+                                "safe": false
+                            }
+                        ],
+                        "dummy": false
+                    }
+                ],
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": [],
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g5"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "raid1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    327.5,
+                    67,
+                    25.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.2,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.5,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        258.5,
+                        67,
+                        115.5
+                    ],
+                    [
+                        242.5,
+                        67,
+                        53.5
+                    ],
+                    [
+                        234.5,
+                        75,
+                        36.5
+                    ],
+                    [
+                        244.5,
+                        75,
+                        30.5
+                    ],
+                    [
+                        257.5,
+                        77,
+                        36.5
+                    ],
+                    [
+                        264.5,
+                        75,
+                        36.5
+                    ],
+                    [
+                        269.5,
+                        75,
+                        33.5
+                    ],
+                    [
+                        279.5,
+                        71,
+                        30.5
+                    ],
+                    [
+                        289.5,
+                        69,
+                        29.5
+                    ],
+                    [
+                        294.5,
+                        71,
+                        29.5
+                    ],
+                    [
+                        299.5,
+                        74,
+                        29.5
+                    ],
+                    [
+                        300.5,
+                        75,
+                        27.5
+                    ],
+                    [
+                        306.5,
+                        70,
+                        25.5
+                    ],
+                    [
+                        319.5,
+                        69,
+                        26.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            273.5,
+                            73,
+                            33.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4}",
+                        "pool": [
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    "2": {
+                        "position": [
+                            278.5,
+                            71,
+                            33.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4}+20",
+                        "pool": [
+                            {
+                                "registry_identifier": "magician_husk_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    "3": {
+                        "position": [
+                            285.5,
+                            69,
+                            27.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:7}",
+                        "pool": [
+                            {
+                                "registry_identifier": "axe_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    "4": {
+                        "position": [
+                            302.5,
+                            73,
+                            26.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:8}",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    "5": {
+                        "position": [
+                            295.5,
+                            76,
+                            28.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:9}+10",
+                        "pool": [
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:4}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                260,
+                                77,
+                                36
+                            ],
+                            "bb_max": [
+                                260,
+                                78,
+                                37
+                            ],
+                            "identifier": "air",
+                            "break": true,
+                            "update": true
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                321,
+                                71,
+                                24
+                            ],
+                            "bb_max": [
+                                321,
+                                69,
+                                26
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g3": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    231.5,
+                    67,
+                    116.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": false,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.3,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [],
+                "monster_points": [
+                    {
+                        "position": [
+                            231.5,
+                            67,
+                            116.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": 10,
+                        "pool": [
+                            {
+                                "registry_identifier": "darkened_husk_lv1",
+                                "count": 1,
+                                "entity_id_variable": "g3_boss"
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    }
+                ],
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "1": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{entity_died_at:g3_boss}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g4"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g2": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "objective",
+                "level": {
+                    "objectives": [
+                        {
+                            "time_limit": 1000,
+                            "successful_game_actions": [
+                                {
+                                    "name": "fill_blocks",
+                                    "bb_min": [
+                                        247,
+                                        67,
+                                        196
+                                    ],
+                                    "bb_max": [
+                                        251,
+                                        72,
+                                        200
+                                    ],
+                                    "identifier": "air",
+                                    "break": false
+                                },
+                                {
+                                    "name": "explosion",
+                                    "position": [
+                                        249.5,
+                                        68,
+                                        198.5
+                                    ],
+                                    "sound": true
+                                }
+                            ],
+                            "failure_game_actions": [],
+                            "clear_game_actions": [
+                                {
+                                    "name": "resume_object_navigation"
+                                },
+                                {
+                                    "name": "objective_level_next"
+                                },
+                                {
+                                    "name": "objective_level_stop"
+                                }
+                            ],
+                            "spawner_ids": {
+                                "3": 3
+                            },
+                            "progress_text": "ジェネレータの破壊: 残り %d 秒",
+                            "clear_text": "ジェネレータの破壊: ✔",
+                            "end_if_failed": false
+                        },
+                        {
+                            "time_limit": 1000,
+                            "successful_game_actions": [
+                                {
+                                    "name": "fill_blocks",
+                                    "bb_min": [
+                                        248,
+                                        67,
+                                        174
+                                    ],
+                                    "bb_max": [
+                                        252,
+                                        72,
+                                        178
+                                    ],
+                                    "identifier": "air",
+                                    "break": false
+                                },
+                                {
+                                    "name": "explosion",
+                                    "position": [
+                                        250.5,
+                                        68,
+                                        176.5
+                                    ],
+                                    "sound": true
+                                }
+                            ],
+                            "failure_game_actions": [],
+                            "clear_game_actions": [
+                                {
+                                    "name": "objective_level_next"
+                                },
+                                {
+                                    "name": "notify_timestamp",
+                                    "id": "generator_destroyed:1"
+                                }
+                            ],
+                            "spawner_ids": {
+                                "7": 7
+                            },
+                            "progress_text": "ジェネレータの破壊: 残り %d 秒",
+                            "clear_text": "ジェネレータの破壊: ✔",
+                            "end_if_failed": false
+                        },
+                        {
+                            "time_limit": 1500,
+                            "successful_game_actions": [
+                                {
+                                    "name": "fill_blocks",
+                                    "bb_min": [
+                                        253,
+                                        67,
+                                        146
+                                    ],
+                                    "bb_max": [
+                                        257,
+                                        74,
+                                        150
+                                    ],
+                                    "identifier": "air",
+                                    "break": false
+                                },
+                                {
+                                    "name": "explosion",
+                                    "position": [
+                                        255.5,
+                                        68,
+                                        148.5
+                                    ],
+                                    "sound": true
+                                }
+                            ],
+                            "failure_game_actions": [],
+                            "clear_game_actions": [
+                                {
+                                    "name": "resume_object_navigation"
+                                },
+                                {
+                                    "name": "objective_level_next"
+                                },
+                                {
+                                    "name": "objective_level_stop"
+                                }
+                            ],
+                            "spawner_ids": {
+                                "10": 10
+                            },
+                            "progress_text": "強化ジェネレータの破壊: 残り %d 秒",
+                            "clear_text": "強化ジェネレータの破壊: ✔",
+                            "end_if_failed": true
+                        }
+                    ],
+                    "successful_game_actions": [],
+                    "failure_game_actions": [],
+                    "is_sequentially": true,
+                    "manual": true
+                },
+                "position": [
+                    239.5,
+                    67,
+                    133.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.15,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.2,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        244.5,
+                        67,
+                        228.5
+                    ],
+                    [
+                        219.5,
+                        67,
+                        212.5
+                    ],
+                    [
+                        216.5,
+                        67,
+                        199.5
+                    ],
+                    [
+                        234.5,
+                        67,
+                        193.5
+                    ],
+                    [
+                        212.5,
+                        67,
+                        160.5
+                    ],
+                    [
+                        234.5,
+                        67,
+                        157.5
+                    ],
+                    [
+                        245.5,
+                        67,
+                        169.5
+                    ],
+                    [
+                        246.5,
+                        67,
+                        149.5
+                    ]
+                ],
+                "monster_points": [
+                    {
+                        "position": [
+                            227.5,
+                            67,
+                            226.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:0} + 30",
+                        "pool": [
+                            {
+                                "registry_identifier": "magician_husk_lv1",
+                                "count": 2
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            221.5,
+                            76,
+                            229.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:0} + 30",
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    0.4,
+                                    0.3,
+                                    -0.4
+                                ]
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            211.5,
+                            67,
+                            191.5
+                        ],
+                        "max_spawn_offset": [
+                            2,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1}",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 8
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            249.5,
+                            68,
+                            198.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 70,
+                        "count": 10,
+                        "offset": "{relay_point:3}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            254.5,
+                            67,
+                            215.5
+                        ],
+                        "max_spawn_offset": [
+                            1,
+                            0,
+                            1
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [
+                                    -0.25,
+                                    0.4,
+                                    -0.25
+                                ]
+                            }
+                        ],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            254.5,
+                            67,
+                            215.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:3}",
+                        "pool": [
+                            {
+                                "registry_identifier": "axe_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            211.5,
+                            68,
+                            173.5
+                        ],
+                        "max_spawn_offset": [
+                            1,
+                            0,
+                            1
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 2,
+                        "count": 20,
+                        "offset": "{relay_point:4} + 3",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            250.5,
+                            68,
+                            176.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 70,
+                        "count": 20,
+                        "offset": "{relay_point:5} + 3",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 100,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            254.5,
+                            67,
+                            156.5
+                        ],
+                        "max_spawn_offset": [
+                            2,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 6,
+                        "count": 6,
+                        "offset": "{relay_point:5} + 20",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            254.5,
+                            67,
+                            156.5
+                        ],
+                        "max_spawn_offset": [
+                            2,
+                            0,
+                            2
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:5} + 20",
+                        "pool": [
+                            {
+                                "registry_identifier": "tank_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            255.5,
+                            68,
+                            148.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 100,
+                        "count": 20,
+                        "offset": "{generator_destroyed:1} + 200",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            },
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 200,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    }
+                ],
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:3}": [
+                        {
+                            "name": "stop_object_navigation"
+                        },
+                        {
+                            "name": "objective_level_start"
+                        }
+                    ],
+                    "{relay_point:5}": [
+                        {
+                            "name": "stop_object_navigation"
+                        },
+                        {
+                            "name": "objective_level_resume"
+                        }
+                    ],
+                    "{relay_point:4}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                208,
+                                67,
+                                169
+                            ],
+                            "bb_max": [
+                                218,
+                                72,
+                                175
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                211.5,
+                                68,
+                                173.5
+                            ],
+                            "sound": true
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g3"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "objective",
+                "level": {
+                    "objectives": [
+                        {
+                            "time_limit": 1500,
+                            "successful_game_actions": [
+                                {
+                                    "name": "health_boost_villager",
+                                    "amount": 20
+                                },
+                                {
+                                    "name": "fill_blocks",
+                                    "bb_min": [
+                                        215,
+                                        67,
+                                        258
+                                    ],
+                                    "bb_max": [
+                                        223,
+                                        73,
+                                        266
+                                    ],
+                                    "identifier": "air",
+                                    "break": false
+                                },
+                                {
+                                    "name": "explosion",
+                                    "position": [
+                                        219.5,
+                                        69,
+                                        262.5
+                                    ],
+                                    "sound": true
+                                },
+                                {
+                                    "name": "notify_timestamp",
+                                    "id": "pyramid_destroyed:1"
+                                }
+                            ],
+                            "failure_game_actions": [],
+                            "clear_game_actions": [],
+                            "spawner_ids": [
+                                0
+                            ],
+                            "progress_text": "ピラミッドの破壊 (1\/2): 残り %d 秒",
+                            "clear_text": "ピラミッドの破壊 (1\/2): ✔",
+                            "end_if_failed": true
+                        },
+                        {
+                            "time_limit": 1500,
+                            "successful_game_actions": [
+                                {
+                                    "name": "health_boost_villager",
+                                    "amount": 20
+                                },
+                                {
+                                    "name": "fill_blocks",
+                                    "bb_min": [
+                                        244,
+                                        67,
+                                        257
+                                    ],
+                                    "bb_max": [
+                                        252,
+                                        73,
+                                        266
+                                    ],
+                                    "identifier": "air",
+                                    "break": false
+                                },
+                                {
+                                    "name": "explosion",
+                                    "position": [
+                                        248.5,
+                                        69,
+                                        261.5
+                                    ],
+                                    "sound": true
+                                },
+                                {
+                                    "name": "notify_timestamp",
+                                    "id": "pyramid_destroyed:2"
+                                }
+                            ],
+                            "failure_game_actions": [],
+                            "clear_game_actions": [],
+                            "spawner_ids": {
+                                "1": 1
+                            },
+                            "progress_text": "ピラミッドの破壊 (2\/2): 残り %d 秒",
+                            "clear_text": "ピラミッドの破壊 (2\/2): ✔",
+                            "end_if_failed": true
+                        }
+                    ],
+                    "successful_game_actions": [],
+                    "failure_game_actions": [],
+                    "is_sequentially": false,
+                    "manual": false
+                },
+                "position": [
+                    232.5,
+                    67,
+                    245.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.16,
+                "require_object_arrival": false,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 0.9,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [],
+                "monster_points": [
+                    {
+                        "position": [
+                            219.5,
+                            69,
+                            262.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 180,
+                        "count": 20,
+                        "offset": 120,
+                        "increment": -18,
+                        "pool": {
+                            "list": {
+                                "66": {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "hardened_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                "33": {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "husk_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            },
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": true
+                        },
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -3,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 15,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "spawner_object_info": {
+                            "max_health": 40,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    },
+                    {
+                        "position": [
+                            248.5,
+                            69,
+                            261.5
+                        ],
+                        "max_spawn_offset": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 30,
+                        "count": 20,
+                        "offset": 30,
+                        "increment": 0,
+                        "pool": {
+                            "list": {
+                                "66": {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "hardened_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                "33": {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "husk_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            },
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": true
+                        },
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -3,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0.5,
+                                    0
+                                ],
+                                "lerp_ticks": 15,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "spawner_object_info": {
+                            "max_health": 40,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "total"
+                        },
+                        "should_break_spawner_object": true,
+                        "dummy": false
+                    }
+                ],
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": [],
+                "object_navigation_rules": "normal"
+            },
+            "children": [
+                {
+                    "serialize_type": "reference",
+                    "reference": "g2"
+                }
+            ],
+            "vote_positions": [],
+            "vote_names": []
+        }
+    },
+    "monster_point_references": []
+}

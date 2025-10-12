@@ -1,0 +1,226 @@
+{
+    "name": "Raid",
+    "world_folder_name": "stage3",
+    "identifier": "raid",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "global_stage_level": 0,
+    "story_info": null,
+    "version": "1.20",
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": [],
+            "position": [
+                327.5,
+                67,
+                25.5
+            ],
+            "spawn_position": null,
+            "object_speed": 0.15,
+            "require_object_arrival": true,
+            "roll_amethyst_power": false,
+            "can_monsters_attack_object": false,
+            "monster_stats_modifier": {
+                "health_multiplier": 1,
+                "attack_damage_multiplier": 1,
+                "movement_speed_multiplier": 1
+            },
+            "relay_points": [],
+            "monster_points": [],
+            "static_monster_points": [],
+            "border_blocks": [],
+            "game_action_timestamp": [],
+            "object_navigation_rules": "normal"
+        },
+        "children": [
+            {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        ],
+        "vote_positions": [],
+        "vote_names": []
+    },
+    "object_position": [
+        327.5,
+        67,
+        25.5
+    ],
+    "spawn_position": [
+        327.5,
+        67,
+        25.5
+    ],
+    "node_references": {
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    327.5,
+                    67,
+                    22.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.16,
+                "require_object_arrival": false,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        326.5,
+                        67,
+                        21.5
+                    ],
+                    [
+                        327.5,
+                        67,
+                        11.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            361.5,
+                            91,
+                            1.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "350",
+                        "pool": [
+                            {
+                                "registry_identifier": "grassland_zombie_lv1",
+                                "count": 1,
+                                "entity_id_variable": "target"
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    2.5,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    -1.75,
+                                    0
+                                ],
+                                "lerp_ticks": 60,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "1": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{entity_died_at:target}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "300": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                356.5,
+                                82,
+                                1.5
+                            ],
+                            "facing_position": [
+                                361.5,
+                                93,
+                                1.5
+                            ],
+                            "ease_duration": 0
+                        }
+                    ],
+                    "60": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                325,
+                                67,
+                                19
+                            ],
+                            "bb_max": [
+                                327,
+                                70,
+                                20
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                326.5,
+                                67,
+                                20.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "360": [
+                        {
+                            "name": "broadcast_camera_shake",
+                            "intensity": 0.5,
+                            "duration": 3
+                        }
+                    ],
+                    "400": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                353.5,
+                                67,
+                                1.5
+                            ],
+                            "facing_position": [
+                                361.5,
+                                69,
+                                1.5
+                            ],
+                            "ease_duration": 1
+                        }
+                    ],
+                    "460": [
+                        {
+                            "name": "broadcast_clear_camera_instruction"
+                        }
+                    ],
+                    "435": [
+                        {
+                            "name": "broadcast_camera_shake",
+                            "intensity": 1.25,
+                            "duration": 0.3
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [],
+            "vote_positions": [],
+            "vote_names": []
+        }
+    },
+    "monster_point_references": []
+}

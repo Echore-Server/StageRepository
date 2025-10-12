@@ -1,0 +1,1281 @@
+{
+    "version": "1.11",
+    "name": "Suspicious Cave",
+    "world_folder_name": "stage2",
+    "identifier": "cave",
+    "author": "Lyrica0954",
+    "world_path_map_identifier": null,
+    "spawn_position": [256.5, 66.0, 256.5],
+    "object_position": [256.5, 66.0, 256.5],
+    "root_node": {
+        "serialize_type": "direct",
+        "info": {
+            "level_type": "normal",
+            "level": {},
+            "position": [287.5, 65.00, 256.5],
+            "relay_points": [],
+            "spawn_position": null,
+            "object_speed": 0.03,
+            "monster_points": {
+            },
+            "border_blocks": []
+        },
+        "children": {
+            "0": {
+                "serialize_type": "reference",
+                "reference": "g1"
+            }
+        }
+    },
+    "node_references": {
+        "cave-D1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [440.5, 33.0, 240.5],
+                "relay_points": {
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            434.5, 37.0, 238.5
+                        ],
+                        "spawn_type": "periodic",
+                        "offset": 50,
+                        "period": 20,
+                        "count": 10,
+                        "list": [
+                            {
+                                "group": "husk",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "south",
+                                "length": 0.0,
+                                "opposite_length": 2,
+                                "lerp_ticks": 14
+                            }
+                        ]
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "ray_process_direction",
+                        "start": [
+                            435,
+                            38,
+                            248
+                        ],
+                        "end": [
+                            439,
+                            38,
+                            248
+                        ],
+                        "facing": "up",
+                        "length": 7
+                    }
+                ]
+            },
+            "children": {
+            }
+        },
+        "cave-C3": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [485.5, 29.0, 259.5],
+                "relay_points": {
+                    "0": [454.5, 49.0, 259.5],
+                    "1": [462.5, 45.0, 263.5],
+                    "2": [465.5, 44.0, 257.5],
+                    "3": [471.5, 42.0, 258.5],
+                    "4": [473.5, 39.0, 262.5],
+                    "5": [473.5, 35.0, 269.5],
+                    "6": [482.5, 32.0, 267.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "mud",
+                        "type": "pillar",
+                        "position": [454.5, 49.0, 258.5],
+                        "length": 2
+                    }
+                ]
+            },
+            "children": {
+            }
+        },
+        "cave-C2": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "defend",
+                "level": {
+                    "operations": {
+                        "0": {
+                            "border_blocks": [
+                            ],
+                            "defend_relay_point": 1,
+                            "progress_text": "周辺を調査中... %d%%",
+                            "operation_length": 300,
+                            "fail_hits": 35,
+                            "successful_game_actions": [
+                                {
+                                    "name": "health_boost_villager",
+                                    "amount": 20
+                                }
+                            ]
+                        },
+                        "1": {
+                            "border_blocks": [
+                            ],
+                            "defend_relay_point": 2,
+                            "progress_text": "怪しげな施設を観察中... %d%%",
+                            "operation_length": 200,
+                            "fail_hits": 1,
+                            "successful_game_actions": []
+                        },
+                        "2": {
+                            "border_blocks": [
+                            ],
+                            "defend_relay_point": 3,
+                            "progress_text": ">> 怪しげな施設を停止中 << %d%%",
+                            "operation_length": 400,
+                            "fail_hits": 35,
+                            "successful_game_actions": [
+                                {
+                                    "name": "health_boost_villager",
+                                    "amount": 30
+                                }
+                            ]
+                        }
+                    }
+                },
+                "position": [454.5, 49.0, 256.5],
+                "relay_points": {
+                    "0": [451.5, 49.0, 246.5],
+                    "1": [461.5, 50.0, 244.5],
+                    "2": [455.5, 49.0, 252.5],
+                    "3": [457.5, 50.0, 242.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "game_action_timestamp": {
+                    "{relay_point:2} + 80": [
+                        {
+                            "name": "defend_level_set_progress_format",
+                            "format": "§c§l!"
+                        }
+                    ],
+                    "{relay_point:2} + 85": [
+                        {
+                            "name": "defend_level_set_progress_format",
+                            "format": "§c§l!!"
+                        }
+                    ],
+                    "{relay_point:2} + 90": [
+                        {
+                            "name": "defend_level_set_progress_format",
+                            "format": "§c§l!!!"
+                        }
+                    ],
+                    "{relay_point:2} + 95": [
+                        {
+                            "name": "defend_level_set_progress_format",
+                            "format": "§c§l!!!!"
+                        }
+                    ],
+                    "{relay_point:2} + 100": [
+                        {
+                            "name": "defend_level_finish_operation"
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 20": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 80": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 120": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 160": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 240": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 255": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 260": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 264": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 267": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 269": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5]
+                        }
+                    ],
+                    "{defend_level:ended_operation_at:2} + 270": [
+                        {
+                            "name": "notify_timestamp",
+                            "id": "spawn_boss"
+                        }
+                    ],
+                    "{entity_died_at:boss}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{spawn_boss}": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [458.5, 48.0, 255.5],
+                            "sound_pitch": 0.4
+                        }
+                    ]
+                },
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            458.5, 48.0, 255.5
+                        ],
+                        "spawn_type": "periodic",
+                        "offset": "{relay_point:2} + 100",
+                        "period": 20,
+                        "count": 10,
+                        "list": [
+                            {
+                                "group": "husk",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.1,
+                                "opposite_length": 2,
+                                "lerp_ticks": 10
+                            }
+                        ]
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [
+                            458.5, 48.0, 255.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{spawn_boss}",
+                        "list": [
+                            {
+                                "group": "giant_husk",
+                                "level": 1,
+                                "count": 1,
+                                "entity_id_variable": "boss"
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.1,
+                                "opposite_length": 2,
+                                "lerp_ticks": 200
+                            }
+                        ]
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "ray_process_direction",
+                        "start": [
+                            450,
+                            51,
+                            244
+                        ],
+                        "end": [
+                            450,
+                            51,
+                            248
+                        ],
+                        "facing": "up",
+                        "length": 5
+                    }
+                ]
+            },
+            "children": {
+            }
+        },
+        "cave-C1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [447.5, 51.0, 246.5],
+                "relay_points": {
+                    "0": [439.5, 44.0, 261.5],
+                    "1": [445.5, 47.0, 258.5],
+                    "2": [441.5, 50.0, 250.5],
+                    "3": [444.5, 50.0, 246.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            441.5, 49.0, 252.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1}",
+                        "list": [
+                            {
+                                "group": "husk",
+                                "level": 1,
+                                "count": 3
+                            }
+                        ],
+                        "performances": []
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [
+                            442.5, 51, 261.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1} + 10",
+                        "list": [
+                            {
+                                "group": "axe_husk",
+                                "level": 1,
+                                "count": 1
+                            },
+                            {
+                                "group": "husk",
+                                "level": 1,
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "down",
+                                "length": 0.5,
+                                "opposite_length": 2,
+                                "lerp_ticks": 40
+                            }
+                        ]
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "ray_process_direction",
+                        "start": [
+                            441,
+                            44,
+                            259
+                        ],
+                        "end": [
+                            441,
+                            44,
+                            263
+                        ],
+                        "facing": "up",
+                        "length": 7
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "cave-C2"
+                }
+            }
+        },
+        "cave-2": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [432.5, 43.0, 256.5],
+                "relay_points": {
+                    "0": [412.5, 44.0, 256.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            424.5, 42.0, 256.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": 10,
+                        "list": [
+                            {
+                                "group": "husk",
+                                "level": 1,
+                                "count": 3
+                            }
+                        ],
+                        "performances": []
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [
+                            429.5, 43.0, 256.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": 10,
+                        "list": [
+                            {
+                                "group": "explosive_husk",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": []
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "ray_process_direction",
+                        "start": [
+                            403,
+                            47,
+                            258
+                        ],
+                        "end": [
+                            407,
+                            47,
+                            262
+                        ],
+                        "facing": "up",
+                        "length": 6
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "cave-C1"
+                },
+                "1": {
+                    "serialize_type": "reference",
+                    "reference": "cave-D1"
+                }
+            },
+            "vote_positions": {
+                "0": [439.5, 44.0, 261.5],
+                "1": [437.5, 40.0, 251.5]
+            }
+        },
+        "forest": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [402.5, 47.0, 261.5],
+                "relay_points": {
+                    "0": [364.5, 48.0, 252.5],
+                    "1": [385.5, 48.0, 253.5],
+                    "2": [394.5, 48.0, 260.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            385.5, 48.0, 252.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1}",
+                        "list": [
+                            {
+                                "group": "aggressive_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": []
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [
+                            368.5, 55.0, 254.5
+                        ],
+                        "spawn_type": "periodic",
+                        "offset": "{relay_point:1} + 100",
+                        "period": 100,
+                        "count": 2,
+                        "list": [
+                            {
+                                "group": "skeleton",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": []
+                    },
+                    "2": {
+                        "number": 2,
+                        "position": [
+                            397.5, 48.0, 255.5
+                        ],
+                        "spawn_type": "periodic",
+                        "offset": "{relay_point:1} + 100",
+                        "period": 100,
+                        "count": 8,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "west",
+                                "length": 5.0,
+                                "opposite_length": 0,
+                                "lerp_ticks": 15
+                            }
+                        ]
+                    },
+                    "3": {
+                        "number": 3,
+                        "position": [
+                            387.5, 48.0, 264.5
+                        ],
+                        "spawn_type": "periodic",
+                        "offset": "{relay_point:1} + 140",
+                        "period": 100,
+                        "count": 8,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "north",
+                                "length": 5.0,
+                                "opposite_length": 0,
+                                "lerp_ticks": 15
+                            }
+                        ]
+                    },
+                    "4": {
+                        "number": 4,
+                        "position": [
+                            392.5, 55.0, 250.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1} + 40",
+                        "list": [
+                            {
+                                "group": "tank_zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [-1, 0.5, 0]
+                            }
+                        ]
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "bounding_box",
+                        "bounding_box": [
+                            366,
+                            48,
+                            250,
+                            366,
+                            52,
+                            254
+                        ]
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "cave-2"
+                }
+            }
+        },
+        "cave-B2": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "rush",
+                "level": {
+                    "time_limit": 800,
+                    "successful_game_actions": [
+                        {
+                            "name": "health_boost_villager",
+                            "amount": 20
+                        }
+                    ]
+                },
+                "position": [361.5, 50.0, 257.5],
+                "relay_points": {
+                    "0": [332.5, 51.0, 274.5],
+                    "1": [340.5, 51.0, 274.5],
+                    "2": [353.5, 50.0, 265.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.2,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            338.5,
+                            51.0,
+                            274.5
+                        ],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:0}",
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": []
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [344.5, 50.0, 271.5],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1}",
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": []
+                    },
+                    "2": {
+                        "number": 2,
+                        "position": [347.5, 50.0, 269.5],
+                        "spawn_type": "once",
+                        "tick": "{relay_point:1}",
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 2
+                            }
+                        ],
+                        "performances": []
+                    },
+                    "3": {
+                        "number": 3,
+                        "position": [352.5, 53.0, 266.5],
+                        "spawn_type": "periodic",
+                        "offset": "{relay_point:2} + 10",
+                        "period": 10,
+                        "count": 4,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "down",
+                                "length": 0.5,
+                                "opposite_length": 2,
+                                "lerp_ticks": 15
+                            }
+                        ]
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "bounding_box",
+                        "bounding_box": [
+                            331,
+                            51,
+                            273,
+                            332,
+                            52,
+                            273
+                        ]
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "forest"
+                }
+            }
+        },
+        "cave-B1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [331.5, 51.0, 269.5],
+                "relay_points": {
+                    "0": [323.5, 50.0, 264.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "ray_process_direction",
+                        "start": [
+                            320,
+                            50,
+                            263
+                        ],
+                        "end": [
+                            324,
+                            50,
+                            261
+                        ],
+                        "facing": "up",
+                        "length": 6
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "cave-B2"
+                }
+            }
+        },
+        "cave-A2": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "defend",
+                "level": {
+                    "operations": {
+                        "0": {
+                            "border_blocks": [
+                                {
+                                    "identifier": "bedrock",
+                                    "type": "bounding_box",
+                                    "bounding_box": [
+                                        352,
+                                        53,
+                                        240,
+                                        357,
+                                        57,
+                                        244
+                                    ]
+                                }
+                            ],
+                            "defend_relay_point": 1,
+                            "progress_text": "鉱石を採掘中... %d%%",
+                            "operation_length": 750,
+                            "fail_hits": 10,
+                            "successful_game_actions": [
+                                {
+                                    "name": "health_boost_villager",
+                                    "amount": 20
+                                }
+                            ]
+                        }
+                    }
+                },
+                "position": [355.5, 52.0, 243.5],
+                "relay_points": {
+                    "0": [340.5, 54.0, 242.5],
+                    "1": [345.5, 52.0, 248.5],
+                    "2": [350.5, 53.0, 243.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            350.5,
+                            57.0,
+                            243.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 180,
+                        "count": 6,
+                        "offset": 0,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "down",
+                                "length": 0.5,
+                                "opposite_length": 2,
+                                "lerp_ticks": 20
+                            }
+                        ]
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [
+                            345.5,
+                            57.0,
+                            241.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 180,
+                        "count": 6,
+                        "offset": 100,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "down",
+                                "length": 0.5,
+                                "opposite_length": 2,
+                                "lerp_ticks": 20
+                            }
+                        ]
+                    },
+                    "2": {
+                        "number": 2,
+                        "position": [
+                            340.5,
+                            57.0,
+                            243.5
+                        ],
+                        "spawn_type": "advanced_periodic",
+                        "period": 180,
+                        "count": 6,
+                        "offset": 200,
+                        "list": {
+                            "0": [
+                                {
+                                    "group": "skeleton",
+                                    "level": 1,
+                                    "count": 1
+                                },
+                                {
+                                    "group": "zombie",
+                                    "level": 2,
+                                    "count": 1
+                                }
+                            ],
+                            "3": [
+                                {
+                                    "group": "zombie",
+                                    "level": 2,
+                                    "count": 1
+                                }
+                            ]
+                        },
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "down",
+                                "length": 0.5,
+                                "opposite_length": 2,
+                                "lerp_ticks": 20
+                            }
+                        ]
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "bounding_box",
+                        "bounding_box": [
+                            336,
+                            53,
+                            239,
+                            336,
+                            58,
+                            243
+                        ]
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "forest"
+                }
+            }
+        },
+        "cave-A1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [333.5, 52.0, 241.5],
+                "relay_points": {
+                    "0": [328.5, 52.0, 251.5],
+                    "1": [330.5, 51.0, 242.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "monster_points": {
+
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "ray_process_direction",
+                        "start": [
+                            324,
+                            52,
+                            254
+                        ],
+                        "end": [
+                            327,
+                            52,
+                            257
+                        ],
+                        "facing": "up",
+                        "length": 6
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "cave-A2"
+                }
+            }
+        },
+        "cave-1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {},
+                "position": [321.5, 52.0, 257.5],
+                "relay_points": {
+                    "0": [305.5, 62.0, 255.5],
+                    "1": [312.5, 58.0, 245.5]
+                },
+                "spawn_position": null,
+                "object_speed": 0.12,
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [
+                            308.5,
+                            60.0,
+                            248.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 3,
+                        "count": 5,
+                        "offset": "{relay_point:0}",
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.0,
+                                "opposite_length": 2,
+                                "lerp_ticks": 9
+                            }
+                        ]
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [
+                            317.5,
+                            56.0,
+                            250.5
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 3,
+                        "count": 5,
+                        "offset": "{relay_point:1}",
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 2,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.0,
+                                "opposite_length": 2,
+                                "lerp_ticks": 9
+                            }
+                        ]
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "stone",
+                        "type": "bounding_box",
+                        "bounding_box": [
+                            289,
+                            65,
+                            250,
+                            289,
+                            72,
+                            262
+                        ]
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "cave-A1"
+                },
+                "1": {
+                    "serialize_type": "reference",
+                    "reference": "cave-B1"
+                }
+            },
+            "vote_positions": {
+                "0": [324.5, 52.0, 256.5],
+                "1": [322.5, 51.0, 259.5]
+            }
+        },
+        "g1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": {
+                },
+                "position": [287.5, 65.0, 256.5],
+                "relay_points": [],
+                "spawn_position": null,
+                "object_speed": 0.1,
+                "game_action_timestamp": {
+                    "40": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [287.5, 65.0, 256.5],
+                            "sound_pitch": 0.0
+                        }
+                    ]
+                },
+                "monster_points": {
+                    "0": {
+                        "number": 0,
+                        "position": [278.5, 72, 237.5],
+                        "spawn_type": "once",
+                        "tick": 0,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 1,
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [0, 0.5, 1]
+                            },
+                            {
+                                "type": "particle",
+                                "particle": {
+                                    "type": "saturated_line_work",
+                                    "fields": {
+                                        "line_length": 10,
+                                        "line_ppb": 2,
+                                        "center_offset": 1.5,
+                                        "amount": 1
+                                    },
+                                    "delaying": true,
+                                    "period": 2
+                                },
+                                "particle_name": "minecraft:balloon_gas_particle"
+                            }
+                        ]
+                    },
+                    "1": {
+                        "number": 1,
+                        "position": [278.5, 72.0, 275.5],
+                        "spawn_type": "once",
+                        "tick": 0,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 1,
+                                "count": 2
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "motion",
+                                "motion": [0, 0.5, -1]
+                            },
+                            {
+                                "type": "particle",
+                                "particle": {
+                                    "type": "saturated_line_work",
+                                    "fields": {
+                                        "line_length": 10,
+                                        "line_ppb": 2,
+                                        "center_offset": 1.5,
+                                        "amount": 1
+                                    },
+                                    "delaying": true,
+                                    "period": 2
+                                },
+                                "particle_name": "minecraft:balloon_gas_particle"
+                            }
+                        ]
+                    },
+                    "2": {
+                        "number": 2,
+                        "position": [283.5, 65.0, 256.5],
+                        "spawn_type": "periodic",
+                        "offset": 0,
+                        "period": 80,
+                        "count": 15,
+                        "list": [
+                            {
+                                "group": "zombie",
+                                "level": 1,
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "direction",
+                                "facing": "up",
+                                "length": 0.0,
+                                "opposite_length": 2,
+                                "lerp_ticks": 100
+                            }
+                        ],
+                        "spawner_object_info": {
+                            "max_health": 200,
+                            "additional_drop_loot": {}
+                        }
+                    }
+                },
+                "border_blocks": [
+                    {
+                        "identifier": "bedrock",
+                        "type": "bounding_box",
+                        "bounding_box": [
+                            258,
+                            65,
+                            236,
+                            258,
+                            74,
+                            277
+                        ]
+                    }
+                ]
+            },
+            "children": {
+                "0": {
+                    "serialize_type": "reference",
+                    "reference": "cave-1"
+                }
+            }
+        }
+    }
+}
