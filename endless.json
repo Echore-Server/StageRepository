@@ -62,7 +62,7 @@
                     "relay_point": 0,
                     "range": 11,
                     "is_range_2d": true,
-                    "max_level": 2,
+                    "max_level": 3,
                     "position": [
                         160.5,
                         90,
@@ -73,12 +73,15 @@
                         83,
                         330
                     ],
-                    "override_range_by_level": [],
+                    "override_range_by_level": {
+                        "3": 14
+                    },
                     "fallback_amethyst_power_pool": [],
                     "amethyst_power_pool": [],
                     "require_energy": {
-                        "1": 1200,
-                        "2": 1000
+                        "1": 60,
+                        "2": 60,
+                        "3": 1100
                     },
                     "successful_game_actions": [],
                     "follow_object": true,
@@ -86,12 +89,12 @@
                     "plane_normal": null
                 },
                 "position": [
-                    0,
-                    0,
-                    0
+                    184.5,
+                    70,
+                    332.5
                 ],
                 "spawn_position": null,
-                "object_speed": 0.08,
+                "object_speed": 0.1,
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": true,
@@ -220,6 +223,194 @@
                         "performances": [],
                         "dummy": false,
                         "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            173.5,
+                            71,
+                            312.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 20,
+                        "count": 24,
+                        "offset": "{purification_level:level_started_at:2}+75",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_golem_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_armadillo_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
+                        },
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 10,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            160.5,
+                            90,
+                            330.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{purification_level:level_started_at:3}+120",
+                        "pool": [
+                            {
+                                "registry_identifier": "stone_scout_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    2,
+                                    0
+                                ],
+                                "lerp_ticks": 30,
+                                "cancel_suffocation_damage": false
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 740
+                            },
+                            {
+                                "type": "delayed",
+                                "delay": 320,
+                                "after": {
+                                    "1": {
+                                        "type": "lerp",
+                                        "lerp_type": "manual",
+                                        "offset": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "vector": [
+                                            15,
+                                            -5,
+                                            -16
+                                        ],
+                                        "lerp_ticks": 60,
+                                        "cancel_suffocation_damage": false
+                                    },
+                                    "2": {
+                                        "type": "delayed",
+                                        "delay": 140,
+                                        "after": {
+                                            "1": {
+                                                "type": "lerp",
+                                                "lerp_type": "manual",
+                                                "offset": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ],
+                                                "vector": [
+                                                    -1,
+                                                    0,
+                                                    -6
+                                                ],
+                                                "lerp_ticks": 40,
+                                                "cancel_suffocation_damage": false
+                                            },
+                                            "2": {
+                                                "type": "delayed",
+                                                "delay": 120,
+                                                "after": {
+                                                    "1": {
+                                                        "type": "lerp",
+                                                        "lerp_type": "manual",
+                                                        "offset": [
+                                                            0,
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "vector": [
+                                                            -7,
+                                                            0,
+                                                            6
+                                                        ],
+                                                        "lerp_ticks": 40,
+                                                        "cancel_suffocation_damage": false
+                                                    },
+                                                    "2": {
+                                                        "type": "delayed",
+                                                        "delay": 120,
+                                                        "after": {
+                                                            "1": {
+                                                                "type": "lerp",
+                                                                "lerp_type": "manual",
+                                                                "offset": [
+                                                                    0,
+                                                                    0,
+                                                                    0
+                                                                ],
+                                                                "vector": [
+                                                                    -15,
+                                                                    -5,
+                                                                    4
+                                                                ],
+                                                                "lerp_ticks": 60,
+                                                                "cancel_suffocation_damage": false
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 },
                 "static_monster_points": [],
@@ -271,8 +462,177 @@
                             ]
                         }
                     ],
-                    "{purification_level:1:progress:60}": {
-                        "1": {
+                    "{purification_level:1:progress:60}+35": [
+                        {
+                            "name": "plateau_invoke_wave_ratio",
+                            "position": [
+                                160.5,
+                                70,
+                                330.5
+                            ],
+                            "hostile_ratio_damage": 0.33,
+                            "friend_ratio_damage": 0
+                        }
+                    ],
+                    "{purification_level:1:progress:60}+65": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{relay_point:1}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{purification_level:level_started_at:2}+40": [
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                160.5,
+                                90,
+                                330.5
+                            ],
+                            "to": [
+                                173.5,
+                                71,
+                                312.5
+                            ]
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                173.5,
+                                70,
+                                348.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ]
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                165.5,
+                                70,
+                                350.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ]
+                        }
+                    ],
+                    "{purification_level:level_started_at:2}+75": [
+                        {
+                            "name": "explosion",
+                            "position": [
+                                160.5,
+                                90,
+                                330.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{purification_level:2:progress:60}": [
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                139.5,
+                                70,
+                                326.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ],
+                            "ratio": 0
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                137.5,
+                                70,
+                                318.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ],
+                            "ratio": 0
+                        }
+                    ],
+                    "{purification_level:1:progress:60}": [
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                173.5,
+                                70,
+                                348.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ],
+                            "ratio": 0
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                165.5,
+                                70,
+                                350.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ],
+                            "ratio": 0
+                        }
+                    ],
+                    "{purification_level:2:progress:60}+35": [
+                        {
+                            "name": "plateau_invoke_wave_ratio",
+                            "position": [
+                                160.5,
+                                70,
+                                330.5
+                            ],
+                            "hostile_ratio_damage": 0.5,
+                            "friend_ratio_damage": 0
+                        }
+                    ],
+                    "{purification_level:2:progress:60}+65": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{relay_point:2}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{purification_level:level_started_at:3}+40": [
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                173.5,
+                                70,
+                                348.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ]
+                        },
+                        {
                             "name": "plateau_invoke_laser",
                             "from": [
                                 165.5,
@@ -285,12 +645,25 @@
                                 330.5
                             ]
                         },
-                        "2": {
+                        {
                             "name": "plateau_invoke_laser",
                             "from": [
-                                173.5,
+                                139.5,
                                 70,
-                                348.5
+                                326.5
+                            ],
+                            "to": [
+                                160.5,
+                                90,
+                                330.5
+                            ]
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                137.5,
+                                70,
+                                318.5
                             ],
                             "to": [
                                 160.5,
@@ -298,12 +671,315 @@
                                 330.5
                             ]
                         }
-                    },
-                    "{purification_level:1:progress:60}+35": [
+                    ],
+                    "{purification_level:level_started_at:3}+75": [
                         {
-                            "name": "resume_object_navigation"
+                            "name": "explosion",
+                            "position": [
+                                160.5,
+                                90,
+                                330.5
+                            ],
+                            "sound": true
+                        },
+                        {
+                            "name": "broadcast_camera_shake",
+                            "intensity": 0.2,
+                            "duration": 0.2
                         }
-                    ]
+                    ],
+                    "{purification_level:level_started_at:3}+90": [
+                        {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                172.5,
+                                85,
+                                315.5
+                            ],
+                            "facing_position": [
+                                160.5,
+                                94,
+                                330.5
+                            ],
+                            "ease_duration": 1.5
+                        }
+                    ],
+                    "{purification_level:level_started_at:3}+180": {
+                        "1": {
+                            "name": "broadcast_clear_camera_instruction"
+                        }
+                    },
+                    "{purification_level:level_started_at:3}+240": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [
+                                160.5,
+                                90,
+                                330.5
+                            ]
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                160.5,
+                                93,
+                                330.5
+                            ],
+                            "to": [
+                                181.5,
+                                70,
+                                327.5
+                            ]
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                160.5,
+                                93,
+                                330.5
+                            ],
+                            "to": [
+                                146.5,
+                                69,
+                                317.5
+                            ]
+                        },
+                        {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                160.5,
+                                93,
+                                330.5
+                            ],
+                            "to": [
+                                169.5,
+                                90,
+                                302.5
+                            ]
+                        }
+                    ],
+                    "{purification_level:level_started_at:3}+300": {
+                        "1": {
+                            "name": "lightning_bolt",
+                            "position": [
+                                160.5,
+                                90,
+                                330.5
+                            ]
+                        },
+                        "2": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                160.5,
+                                93,
+                                330.5
+                            ],
+                            "to": [
+                                173.5,
+                                71,
+                                323.5
+                            ]
+                        },
+                        "3": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                160.5,
+                                93,
+                                330.5
+                            ],
+                            "to": [
+                                161.5,
+                                69,
+                                312.5
+                            ]
+                        }
+                    },
+                    "{purification_level:level_started_at:3}+520": {
+                        "1": {
+                            "name": "lightning_bolt",
+                            "position": [
+                                175.5,
+                                71,
+                                314.5
+                            ]
+                        },
+                        "2": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                175.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                168.5,
+                                71,
+                                321.5
+                            ]
+                        },
+                        "3": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                175.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                181.5,
+                                71,
+                                320.5
+                            ]
+                        },
+                        "4": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                175.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                177.5,
+                                71,
+                                312.5
+                            ]
+                        },
+                        "5": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                175.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                166.5,
+                                71,
+                                305.5
+                            ]
+                        }
+                    },
+                    "{purification_level:level_started_at:3}+640": {
+                        "1": {
+                            "name": "lightning_bolt",
+                            "position": [
+                                174.5,
+                                71,
+                                308.5
+                            ]
+                        },
+                        "2": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                174.5,
+                                71,
+                                308.5
+                            ],
+                            "to": [
+                                162.5,
+                                71,
+                                320.5
+                            ]
+                        },
+                        "3": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                174.5,
+                                71,
+                                308.5
+                            ],
+                            "to": [
+                                170.5,
+                                71,
+                                304.5
+                            ]
+                        },
+                        "4": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                174.5,
+                                71,
+                                308.5
+                            ],
+                            "to": [
+                                176.5,
+                                71,
+                                306.5
+                            ]
+                        },
+                        "5": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                174.5,
+                                71,
+                                308.5
+                            ],
+                            "to": [
+                                177.5,
+                                71,
+                                311.5
+                            ]
+                        }
+                    },
+                    "{purification_level:level_started_at:3}+760": {
+                        "1": {
+                            "name": "lightning_bolt",
+                            "position": [
+                                167.5,
+                                71,
+                                314.5
+                            ]
+                        },
+                        "2": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                167.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                176.5,
+                                71,
+                                305.5
+                            ]
+                        },
+                        "3": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                167.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                185.5,
+                                71,
+                                332.5
+                            ]
+                        },
+                        "4": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                167.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                160.5,
+                                71,
+                                307.5
+                            ]
+                        },
+                        "5": {
+                            "name": "plateau_invoke_laser",
+                            "from": [
+                                167.5,
+                                71,
+                                314.5
+                            ],
+                            "to": [
+                                161.5,
+                                71,
+                                320.5
+                            ]
+                        }
+                    }
                 },
                 "object_navigation_rules": []
             },
