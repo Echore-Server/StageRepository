@@ -1,59 +1,297 @@
 {
-    "global_stage_level": -1,
-    "version": "1.20",
     "name": "Mini 1",
     "world_folder_name": "mini1",
     "identifier": "mini1",
     "author": "Lyrica0954",
     "world_path_map_identifier": null,
-    "spawn_position": [309.5, 73.0, 354.5],
-    "object_position": [309.5, 73.0, 354.5],
-    "monster_point_references": {
-
-    },
+    "global_stage_level": -1,
+    "story_info": null,
+    "version": "1.20",
     "root_node": {
         "serialize_type": "direct",
         "info": {
             "level_type": "normal",
-            "level": {},
-            "position": [309.5, 73.0, 354.5],
-            "relay_points": [],
+            "level": [],
+            "position": [
+                309.5,
+                73,
+                354.5
+            ],
             "spawn_position": null,
             "object_speed": 0.15,
+            "require_object_arrival": true,
+            "roll_amethyst_power": false,
+            "can_monsters_attack_object": false,
+            "monster_stats_modifier": {
+                "health_multiplier": 1,
+                "attack_damage_multiplier": 1,
+                "movement_speed_multiplier": 1
+            },
+            "relay_points": [],
             "monster_points": [],
-            "border_blocks": [
-            ]
+            "static_monster_points": [],
+            "border_blocks": [],
+            "game_action_timestamp": [],
+            "object_navigation_rules": "normal"
         },
-        "children": {
-            "0": {
+        "children": [
+            {
                 "serialize_type": "reference",
                 "reference": "g1"
             }
-        }
+        ],
+        "vote_positions": [],
+        "vote_names": []
     },
+    "object_position": [
+        309.5,
+        73,
+        354.5
+    ],
+    "spawn_position": [
+        309.5,
+        73,
+        354.5
+    ],
     "node_references": {
         "g1": {
             "serialize_type": "direct",
             "info": {
-                "require_object_arrival": false,
-                "level_type": "normal",
-                "monster_stats_modifier": {
-                },
+                "level_type": "purification",
                 "level": {
+                    "relay_point": 0,
+                    "range": 12,
+                    "is_range_2d": true,
+                    "max_level": 1,
+                    "position": [
+                        297.5,
+                        74,
+                        342.5
+                    ],
+                    "beacon_base_position": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "override_range_by_level": [],
+                    "fallback_amethyst_power_pool": [],
+                    "amethyst_power_pool": [],
+                    "require_energy": {
+                        "1": 800
+                    },
+                    "successful_game_actions": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                246,
+                                73,
+                                271
+                            ],
+                            "bb_max": [
+                                246,
+                                73,
+                                259
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    ],
+                    "follow_object": true,
+                    "stop_object_navigation": false,
+                    "plane_normal": null
                 },
-                "position": [309.5, 73.0, 354.5],
-                "border_blocks": [],
-                "relay_points": {
-                },
+                "position": [
+                    243.5,
+                    73,
+                    265.5
+                ],
                 "spawn_position": null,
-                "object_speed": 0.0,
-                "game_action_timestamp": {
+                "object_speed": 0.12,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1,
+                    "attack_damage_multiplier": 1.25,
+                    "movement_speed_multiplier": 1.25
                 },
+                "relay_points": [
+                    [
+                        297.5,
+                        74,
+                        342.5
+                    ],
+                    [
+                        289.5,
+                        74,
+                        324.5
+                    ],
+                    [
+                        284.5,
+                        74,
+                        308.5
+                    ],
+                    [
+                        254.5,
+                        73,
+                        265.5
+                    ]
+                ],
                 "monster_points": {
-                }
+                    "1": {
+                        "position": [
+                            283.5,
+                            76,
+                            336.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 10,
+                        "offset": "40",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 0
+                    },
+                    "2": {
+                        "position": [
+                            301.5,
+                            74,
+                            335.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "1",
+                        "pool": [
+                            {
+                                "registry_identifier": "magician_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 0
+                    },
+                    "3": {
+                        "position": [
+                            289.5,
+                            74,
+                            324.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 20,
+                        "offset": "{spawner_monsters_eliminated_at:2}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 0
+                    },
+                    "4": {
+                        "position": [
+                            289.5,
+                            81,
+                            324.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 5,
+                        "count": 30,
+                        "offset": "300",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "spread",
+                                "radius_min": 4,
+                                "radius_max": 5.5,
+                                "adjust_y": true,
+                                "safe": true
+                            },
+                            {
+                                "type": "freeze",
+                                "duration": 25
+                            }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            255.5,
+                            73,
+                            269.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:2}",
+                        "pool": [
+                            {
+                                "registry_identifier": "darkened_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 0
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:1}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{relay_point:1}+200": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{all_spawner_monsters_eliminated_at}": {
+                        "1": {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                245,
+                                73,
+                                271
+                            ],
+                            "bb_max": [
+                                245,
+                                73,
+                                259
+                            ],
+                            "identifier": "air",
+                            "break": true
+                        }
+                    }
+                },
+                "object_navigation_rules": []
             },
-            "children": {
-            }
+            "children": [],
+            "vote_positions": [],
+            "vote_names": []
         }
-    }
+    },
+    "monster_point_references": []
 }

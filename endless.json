@@ -208,6 +208,28 @@
                         "performances": [],
                         "dummy": false,
                         "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            161.5,
+                            80,
+                            194.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 1,
+                        "count": 6,
+                        "offset": "{relay_point:0}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 },
                 "static_monster_points": [],
@@ -302,7 +324,14 @@
                             "id": "found_by_scout",
                             "delay": 35
                         }
-                    ]
+                    ],
+                    "300": {
+                        "1": {
+                            "name": "cancel_monster_spawn",
+                            "point_number": 1,
+                            "kill_spawned_monsters": true
+                        }
+                    }
                 },
                 "object_navigation_rules": "normal"
             },
