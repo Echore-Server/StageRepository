@@ -17,7 +17,13 @@
                     115.5
                 ]
             }
-        }
+        },
+        "global_drop_materials": [
+            {
+                "identifier": "tag_grassland_zombie",
+                "amount": 1
+            }
+        ]
     },
     "version": "1.20",
     "root_node": {
