@@ -51,6 +51,11 @@
                 "spawn_position": null,
                 "object_speed": 0.0,
                 "game_action_timestamp": {
+                    "1": [
+                        {
+                            "name": "give_debug_ability"
+                        }
+                    ]
                 },
                 "monster_points": {
                     "0": {
