@@ -41,6 +41,7 @@
             "require_object_arrival": true,
             "roll_amethyst_power": false,
             "can_monsters_attack_object": false,
+            "can_monsters_climb_walls": false,
             "monster_stats_modifier": {
                 "health_multiplier": 1,
                 "attack_damage_multiplier": 1,
@@ -108,6 +109,7 @@
                     },
                     "successful_game_actions": [],
                     "follow_object": false,
+                    "stop_object_navigation": true,
                     "plane_normal": null
                 },
                 "position": [
@@ -120,6 +122,7 @@
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": true,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 1.7,
                     "attack_damage_multiplier": 1,
@@ -166,7 +169,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -203,7 +207,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -240,7 +245,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -273,7 +279,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -306,7 +313,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -339,7 +347,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -372,7 +381,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 ],
                 "static_monster_points": [],
@@ -500,6 +510,7 @@
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": false,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 1,
                     "attack_damage_multiplier": 1,
@@ -580,7 +591,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "6": {
                         "position": [
@@ -621,7 +633,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "5": {
                         "position": [
@@ -662,7 +675,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "4": {
                         "position": [
@@ -703,7 +717,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "3": {
                         "position": [
@@ -744,7 +759,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "2": {
                         "position": [
@@ -785,7 +801,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "1": {
                         "position": [
@@ -826,7 +843,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "0": {
                         "position": [
@@ -867,7 +885,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 },
                 "static_monster_points": [],
@@ -1019,6 +1038,7 @@
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": false,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 0.9,
                     "attack_damage_multiplier": 1,
@@ -1060,7 +1080,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "21": {
                         "position": [
@@ -1101,7 +1122,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "20": {
                         "position": [
@@ -1126,7 +1148,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "19": {
                         "position": [
@@ -1163,7 +1186,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "17": {
                         "position": [
@@ -1196,7 +1220,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "16": {
                         "position": [
@@ -1235,7 +1260,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "15": {
                         "position": [
@@ -1277,7 +1303,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "14": {
                         "position": [
@@ -1319,7 +1346,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "13": {
                         "position": [
@@ -1361,7 +1389,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "12": {
                         "position": [
@@ -1407,7 +1436,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "11": {
                         "position": [
@@ -1449,7 +1479,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "10": {
                         "position": [
@@ -1491,7 +1522,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "9": {
                         "position": [
@@ -1533,7 +1565,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "8": {
                         "position": [
@@ -1575,7 +1608,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "7": {
                         "position": [
@@ -1617,7 +1651,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "6": {
                         "position": [
@@ -1659,7 +1694,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "5": {
                         "position": [
@@ -1701,7 +1737,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "4": {
                         "position": [
@@ -1743,7 +1780,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "3": {
                         "position": [
@@ -1768,7 +1806,8 @@
                             "spawned_monsters_counting_method": "field"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "2": {
                         "position": [
@@ -1810,7 +1849,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "1": {
                         "position": [
@@ -1852,7 +1892,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "0": {
                         "position": [
@@ -1874,7 +1915,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 },
                 "static_monster_points": [],
@@ -3298,6 +3340,7 @@
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": false,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 2.25,
                     "attack_damage_multiplier": 1,
@@ -3409,7 +3452,8 @@
                                 "duration": 29
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "6": {
                         "position": [
@@ -3451,7 +3495,8 @@
                                 "cancel_suffocation_damage": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "5": {
                         "position": [
@@ -3473,7 +3518,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "4": {
                         "position": [
@@ -3506,7 +3552,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "3": {
                         "position": [
@@ -3545,7 +3592,8 @@
                                 ]
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "2": {
                         "position": [
@@ -3579,7 +3627,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "1": {
                         "position": [
@@ -3613,7 +3662,8 @@
                                 ]
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     "0": {
                         "position": [
@@ -3651,7 +3701,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 },
                 "static_monster_points": [],
@@ -3789,7 +3840,7 @@
                 "level_type": "purification",
                 "level": {
                     "relay_point": 1,
-                    "range": 6,
+                    "range": 7.5,
                     "is_range_2d": false,
                     "max_level": 3,
                     "position": [
@@ -3814,6 +3865,7 @@
                     },
                     "successful_game_actions": [],
                     "follow_object": false,
+                    "stop_object_navigation": true,
                     "plane_normal": null
                 },
                 "position": [
@@ -3826,10 +3878,11 @@
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": true,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 1.6,
-                    "attack_damage_multiplier": 1,
-                    "movement_speed_multiplier": 1
+                    "attack_damage_multiplier": 0.9,
+                    "movement_speed_multiplier": 0.65
                 },
                 "relay_points": {
                     "1": [
@@ -3867,7 +3920,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -3904,7 +3958,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -3941,7 +3996,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -3974,7 +4030,8 @@
                                 "safe": false
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 ],
                 "static_monster_points": [],
@@ -3988,233 +4045,6 @@
                     "reference": "g5"
                 }
             ],
-            "vote_positions": [],
-            "vote_names": []
-        },
-        "raid1": {
-            "serialize_type": "direct",
-            "info": {
-                "level_type": "normal",
-                "level": [],
-                "position": [
-                    327.5,
-                    67,
-                    25.5
-                ],
-                "spawn_position": null,
-                "object_speed": 0.2,
-                "require_object_arrival": true,
-                "roll_amethyst_power": false,
-                "can_monsters_attack_object": false,
-                "monster_stats_modifier": {
-                    "health_multiplier": 1.5,
-                    "attack_damage_multiplier": 1,
-                    "movement_speed_multiplier": 1
-                },
-                "relay_points": [
-                    [
-                        258.5,
-                        67,
-                        115.5
-                    ],
-                    [
-                        242.5,
-                        67,
-                        53.5
-                    ],
-                    [
-                        234.5,
-                        75,
-                        36.5
-                    ],
-                    [
-                        244.5,
-                        75,
-                        30.5
-                    ],
-                    [
-                        257.5,
-                        77,
-                        36.5
-                    ],
-                    [
-                        264.5,
-                        75,
-                        36.5
-                    ],
-                    [
-                        269.5,
-                        75,
-                        33.5
-                    ],
-                    [
-                        279.5,
-                        71,
-                        30.5
-                    ],
-                    [
-                        289.5,
-                        69,
-                        29.5
-                    ],
-                    [
-                        294.5,
-                        71,
-                        29.5
-                    ],
-                    [
-                        299.5,
-                        74,
-                        29.5
-                    ],
-                    [
-                        300.5,
-                        75,
-                        27.5
-                    ],
-                    [
-                        306.5,
-                        70,
-                        25.5
-                    ],
-                    [
-                        319.5,
-                        69,
-                        26.5
-                    ]
-                ],
-                "monster_points": {
-                    "1": {
-                        "position": [
-                            273.5,
-                            73,
-                            33.5
-                        ],
-                        "max_spawn_offset": null,
-                        "spawn_type": "once",
-                        "tick": "{relay_point:4}",
-                        "pool": [
-                            {
-                                "registry_identifier": "silverfish_lv1",
-                                "count": 5
-                            }
-                        ],
-                        "performances": [],
-                        "dummy": false
-                    },
-                    "2": {
-                        "position": [
-                            278.5,
-                            71,
-                            33.5
-                        ],
-                        "max_spawn_offset": null,
-                        "spawn_type": "once",
-                        "tick": "{relay_point:4}+20",
-                        "pool": [
-                            {
-                                "registry_identifier": "magician_husk_lv1",
-                                "count": 3
-                            }
-                        ],
-                        "performances": [],
-                        "dummy": false
-                    },
-                    "3": {
-                        "position": [
-                            285.5,
-                            69,
-                            27.5
-                        ],
-                        "max_spawn_offset": null,
-                        "spawn_type": "once",
-                        "tick": "{relay_point:7}",
-                        "pool": [
-                            {
-                                "registry_identifier": "axe_husk_lv1",
-                                "count": 1
-                            }
-                        ],
-                        "performances": [],
-                        "dummy": false
-                    },
-                    "4": {
-                        "position": [
-                            302.5,
-                            73,
-                            26.5
-                        ],
-                        "max_spawn_offset": null,
-                        "spawn_type": "once",
-                        "tick": "{relay_point:8}",
-                        "pool": [
-                            {
-                                "registry_identifier": "husk_lv1",
-                                "count": 5
-                            }
-                        ],
-                        "performances": [],
-                        "dummy": false
-                    },
-                    "5": {
-                        "position": [
-                            295.5,
-                            76,
-                            28.5
-                        ],
-                        "max_spawn_offset": null,
-                        "spawn_type": "once",
-                        "tick": "{relay_point:9}+10",
-                        "pool": [
-                            {
-                                "registry_identifier": "silverfish_lv1",
-                                "count": 5
-                            }
-                        ],
-                        "performances": [],
-                        "dummy": false
-                    }
-                },
-                "static_monster_points": [],
-                "border_blocks": [],
-                "game_action_timestamp": {
-                    "{relay_point:4}": [
-                        {
-                            "name": "fill_blocks",
-                            "bb_min": [
-                                260,
-                                77,
-                                36
-                            ],
-                            "bb_max": [
-                                260,
-                                78,
-                                37
-                            ],
-                            "identifier": "air",
-                            "break": true,
-                            "update": true
-                        },
-                        {
-                            "name": "fill_blocks",
-                            "bb_min": [
-                                321,
-                                71,
-                                24
-                            ],
-                            "bb_max": [
-                                321,
-                                69,
-                                26
-                            ],
-                            "identifier": "air",
-                            "break": false
-                        }
-                    ]
-                },
-                "object_navigation_rules": "normal"
-            },
-            "children": [],
             "vote_positions": [],
             "vote_names": []
         },
@@ -4233,6 +4063,7 @@
                 "require_object_arrival": false,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": false,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 1.3,
                     "attack_damage_multiplier": 1,
@@ -4261,7 +4092,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 ],
                 "static_monster_points": [],
@@ -4450,6 +4282,7 @@
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": false,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 1.2,
                     "attack_damage_multiplier": 1,
@@ -4518,7 +4351,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4545,7 +4379,8 @@
                                 ]
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4567,7 +4402,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4600,7 +4436,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4631,7 +4468,8 @@
                                 ]
                             }
                         ],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4653,7 +4491,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4678,7 +4517,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4711,7 +4551,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4736,7 +4577,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4758,7 +4600,8 @@
                             }
                         ],
                         "performances": [],
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -4795,7 +4638,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 ],
                 "static_monster_points": [],
@@ -4967,6 +4811,7 @@
                 "require_object_arrival": false,
                 "roll_amethyst_power": false,
                 "can_monsters_attack_object": false,
+                "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
                     "health_multiplier": 0.9,
                     "attack_damage_multiplier": 1,
@@ -5043,7 +4888,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     },
                     {
                         "position": [
@@ -5114,7 +4960,8 @@
                             "spawned_monsters_counting_method": "total"
                         },
                         "should_break_spawner_object": true,
-                        "dummy": false
+                        "dummy": false,
+                        "drop_multiplier": 1
                     }
                 ],
                 "static_monster_points": [],
@@ -5128,6 +4975,239 @@
                     "reference": "g2"
                 }
             ],
+            "vote_positions": [],
+            "vote_names": []
+        },
+        "raid1": {
+            "serialize_type": "direct",
+            "info": {
+                "level_type": "normal",
+                "level": [],
+                "position": [
+                    327.5,
+                    67,
+                    25.5
+                ],
+                "spawn_position": null,
+                "object_speed": 0.2,
+                "require_object_arrival": true,
+                "roll_amethyst_power": false,
+                "can_monsters_attack_object": false,
+                "can_monsters_climb_walls": false,
+                "monster_stats_modifier": {
+                    "health_multiplier": 1.5,
+                    "attack_damage_multiplier": 1,
+                    "movement_speed_multiplier": 1
+                },
+                "relay_points": [
+                    [
+                        258.5,
+                        67,
+                        115.5
+                    ],
+                    [
+                        242.5,
+                        67,
+                        53.5
+                    ],
+                    [
+                        234.5,
+                        75,
+                        36.5
+                    ],
+                    [
+                        244.5,
+                        75,
+                        30.5
+                    ],
+                    [
+                        257.5,
+                        77,
+                        36.5
+                    ],
+                    [
+                        264.5,
+                        75,
+                        36.5
+                    ],
+                    [
+                        269.5,
+                        75,
+                        33.5
+                    ],
+                    [
+                        279.5,
+                        71,
+                        30.5
+                    ],
+                    [
+                        289.5,
+                        69,
+                        29.5
+                    ],
+                    [
+                        294.5,
+                        71,
+                        29.5
+                    ],
+                    [
+                        299.5,
+                        74,
+                        29.5
+                    ],
+                    [
+                        300.5,
+                        75,
+                        27.5
+                    ],
+                    [
+                        306.5,
+                        70,
+                        25.5
+                    ],
+                    [
+                        319.5,
+                        69,
+                        26.5
+                    ]
+                ],
+                "monster_points": {
+                    "1": {
+                        "position": [
+                            273.5,
+                            73,
+                            33.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4}",
+                        "pool": [
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "2": {
+                        "position": [
+                            278.5,
+                            71,
+                            33.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:4}+20",
+                        "pool": [
+                            {
+                                "registry_identifier": "magician_husk_lv1",
+                                "count": 3
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "3": {
+                        "position": [
+                            285.5,
+                            69,
+                            27.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:7}",
+                        "pool": [
+                            {
+                                "registry_identifier": "axe_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "4": {
+                        "position": [
+                            302.5,
+                            73,
+                            26.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:8}",
+                        "pool": [
+                            {
+                                "registry_identifier": "husk_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "5": {
+                        "position": [
+                            295.5,
+                            76,
+                            28.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:9}+10",
+                        "pool": [
+                            {
+                                "registry_identifier": "silverfish_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    }
+                },
+                "static_monster_points": [],
+                "border_blocks": [],
+                "game_action_timestamp": {
+                    "{relay_point:4}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                260,
+                                77,
+                                36
+                            ],
+                            "bb_max": [
+                                260,
+                                78,
+                                37
+                            ],
+                            "identifier": "air",
+                            "break": true,
+                            "update": true
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                321,
+                                71,
+                                24
+                            ],
+                            "bb_max": [
+                                321,
+                                69,
+                                26
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        }
+                    ]
+                },
+                "object_navigation_rules": "normal"
+            },
+            "children": [],
             "vote_positions": [],
             "vote_names": []
         }
