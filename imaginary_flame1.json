@@ -8,6 +8,7 @@
     "world_path_map_identifier": null,
     "spawn_position": [260.5, 65.0, 260.5],
     "object_position": [260.5, 65.0, 260.5],
+    "world_time": 6000,
     "monster_point_references": {
         "boss": {
             "position": [0, 0, 0],

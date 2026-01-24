@@ -8,6 +8,7 @@
     "world_path_map_identifier": null,
     "spawn_position": [256.5, 65.0, 251.5],
     "object_position": [256.5, 65.0, 251.5],
+    "world_time": 6000,
     "root_node": {
         "serialize_type": "direct",
         "info": {

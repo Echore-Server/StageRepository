@@ -8,6 +8,7 @@
     "world_path_map_identifier": null,
     "spawn_position": [315.5, 66.0, 245.5],
     "object_position": [315.5, 66.0, 245.5],
+    "world_time": 6000,
     "monster_point_references": {
     },
     "root_node": {

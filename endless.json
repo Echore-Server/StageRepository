@@ -7,6 +7,7 @@
     "global_stage_level": -1,
     "story_info": null,
     "version": "1.20",
+    "world_time": 6000,
     "root_node": {
         "serialize_type": "direct",
         "info": {
