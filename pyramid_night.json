@@ -1,7 +1,7 @@
 {
-    "name": "Mission 1",
+    "name": "Pyramid Night",
     "world_folder_name": "stage3",
-    "identifier": "mission1",
+    "identifier": "pyramid_night",
     "author": "Lyrica0954",
     "world_path_map_identifier": null,
     "global_stage_level": 0,
@@ -63,7 +63,7 @@
                 "level": {
                     "objectives": {
                         "1": {
-                            "time_limit": 12000,
+                            "time_limit": 4800,
                             "successful_game_actions": [],
                             "failure_game_actions": [],
                             "clear_game_actions": [],
@@ -152,9 +152,9 @@
                         133.5
                     ],
                     [
-                        231,
-                        66,
-                        116
+                        231.5,
+                        67,
+                        116.5
                     ],
                     [
                         231.5,
@@ -171,7 +171,7 @@
                         ],
                         "max_spawn_offset": null,
                         "spawn_type": "once",
-                        "tick": 0,
+                        "tick": "{relay_point:10}",
                         "pool": [],
                         "performances": [],
                         "spawner_object_info": {
@@ -247,10 +247,10 @@
                             }
                         ],
                         "spawner_object_info": {
-                            "max_health": 40,
+                            "max_health": 60,
                             "additional_drop_loot": [],
                             "position_offset": null,
-                            "broke_when_spawned_monsters_killed": true,
+                            "broke_when_spawned_monsters_killed": false,
                             "spawned_monsters_counting_method": null
                         },
                         "should_break_spawner_object": true,
@@ -291,10 +291,10 @@
                         ],
                         "performances": [],
                         "spawner_object_info": {
-                            "max_health": 40,
+                            "max_health": 60,
                             "additional_drop_loot": [],
                             "position_offset": null,
-                            "broke_when_spawned_monsters_killed": true,
+                            "broke_when_spawned_monsters_killed": false,
                             "spawned_monsters_counting_method": null
                         },
                         "should_break_spawner_object": true,
@@ -323,12 +323,12 @@
                                 "count": 1
                             }
                         ],
-                        "performances": {
-                            "1": {
+                        "performances": [
+                            {
                                 "type": "delayed",
                                 "delay": 50,
-                                "after": {
-                                    "1": {
+                                "after": [
+                                    {
                                         "type": "motion",
                                         "motion": [
                                             -0.32,
@@ -336,13 +336,13 @@
                                             0.41
                                         ]
                                     }
-                                }
+                                ]
                             },
-                            "2": {
+                            {
                                 "type": "freeze",
                                 "duration": 50
                             }
-                        },
+                        ],
                         "dummy": false,
                         "drop_multiplier": 1
                     },
@@ -364,16 +364,16 @@
                                 "count": 1
                             }
                         ],
-                        "performances": {
-                            "1": {
+                        "performances": [
+                            {
                                 "type": "freeze",
                                 "duration": 60
                             },
-                            "2": {
+                            {
                                 "type": "delayed",
                                 "delay": 60,
-                                "after": {
-                                    "1": {
+                                "after": [
+                                    {
                                         "type": "motion",
                                         "motion": [
                                             -0.25,
@@ -381,9 +381,9 @@
                                             -0.23
                                         ]
                                     }
-                                }
+                                ]
                             }
-                        },
+                        ],
                         "dummy": false,
                         "drop_multiplier": 1
                     },
@@ -409,8 +409,8 @@
                                 "count": 1
                             }
                         ],
-                        "performances": {
-                            "1": {
+                        "performances": [
+                            {
                                 "type": "lerp",
                                 "lerp_type": "manual",
                                 "offset": [
@@ -426,7 +426,7 @@
                                 "lerp_ticks": 20,
                                 "cancel_suffocation_damage": false
                             }
-                        },
+                        ],
                         "dummy": false,
                         "drop_multiplier": 1
                     },
@@ -450,7 +450,7 @@
                         ],
                         "performances": [],
                         "spawner_object_info": {
-                            "max_health": 50,
+                            "max_health": 70,
                             "additional_drop_loot": [],
                             "position_offset": null,
                             "broke_when_spawned_monsters_killed": false,
@@ -472,6 +472,102 @@
                         "pool": [
                             {
                                 "registry_identifier": "axe_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "9": {
+                        "position": [
+                            250.5,
+                            68,
+                            176.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 200,
+                        "count": 8,
+                        "offset": "{relay_point:6}",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "hardened_zombie_lv1",
+                                "count": 5
+                            }
+                        ],
+                        "performances": [
+                            {
+                                "type": "lerp",
+                                "lerp_type": "manual",
+                                "offset": [
+                                    0,
+                                    -2,
+                                    0
+                                ],
+                                "vector": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "lerp_ticks": 10,
+                                "cancel_suffocation_damage": false
+                            }
+                        ],
+                        "spawner_object_info": {
+                            "max_health": 1000,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": true,
+                            "spawned_monsters_counting_method": "field"
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "10": {
+                        "position": [
+                            255.5,
+                            68,
+                            148.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "periodic",
+                        "period": 100,
+                        "count": 8,
+                        "offset": "{spawner_object_destroyed_at:9}+40",
+                        "increment": 0,
+                        "pool": [
+                            {
+                                "registry_identifier": "soldier_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": [],
+                        "spawner_object_info": {
+                            "max_health": 85,
+                            "additional_drop_loot": [],
+                            "position_offset": null,
+                            "broke_when_spawned_monsters_killed": false,
+                            "spawned_monsters_counting_method": null
+                        },
+                        "should_break_spawner_object": false,
+                        "dummy": true,
+                        "drop_multiplier": 1
+                    },
+                    "11": {
+                        "position": [
+                            231.5,
+                            67,
+                            116.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{relay_point:8}",
+                        "pool": [
+                            {
+                                "registry_identifier": "darkened_husk_lv1",
                                 "count": 1
                             }
                         ],
@@ -509,8 +605,8 @@
                             "break": true
                         }
                     ],
-                    "{spawner_object_destroyed_at:3}": {
-                        "1": {
+                    "{spawner_object_destroyed_at:3}": [
+                        {
                             "name": "explosion",
                             "position": [
                                 219.5,
@@ -519,7 +615,7 @@
                             ],
                             "sound": true
                         },
-                        "2": {
+                        {
                             "name": "fill_blocks",
                             "bb_min": [
                                 222,
@@ -534,19 +630,19 @@
                             "identifier": "air",
                             "break": true
                         }
-                    },
-                    "1": {
-                        "1": {
+                    ],
+                    "1": [
+                        {
                             "name": "stop_object_navigation"
                         }
-                    },
-                    "{spawner_object_destroyed_at:2}&&{spawner_object_destroyed_at:3}": {
-                        "1": {
+                    ],
+                    "{spawner_object_destroyed_at:2}&&{spawner_object_destroyed_at:3}": [
+                        {
                             "name": "resume_object_navigation"
                         }
-                    },
-                    "{relay_point:1}": {
-                        "1": {
+                    ],
+                    "{relay_point:1}": [
+                        {
                             "name": "raytrace_fill_blocks",
                             "from": [
                                 227.5,
@@ -566,7 +662,7 @@
                             "collide": true,
                             "collide_knockback_strength": 2
                         },
-                        "2": {
+                        {
                             "name": "explosion",
                             "position": [
                                 227.5,
@@ -575,9 +671,9 @@
                             ],
                             "sound": true
                         }
-                    },
-                    "{spawner_object_destroyed_at:7}": {
-                        "1": {
+                    ],
+                    "{spawner_object_destroyed_at:7}": [
+                        {
                             "name": "explosion",
                             "position": [
                                 249.5,
@@ -586,7 +682,7 @@
                             ],
                             "sound": true
                         },
-                        "2": {
+                        {
                             "name": "fill_blocks",
                             "bb_min": [
                                 250,
@@ -601,15 +697,95 @@
                             "identifier": "air",
                             "break": true
                         },
-                        "3": {
+                        {
                             "name": "resume_object_navigation"
                         }
-                    },
-                    "{relay_point:4}": {
-                        "1": {
+                    ],
+                    "{relay_point:4}": [
+                        {
                             "name": "stop_object_navigation"
                         }
-                    }
+                    ],
+                    "{relay_point:6}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:9}&&{spawner_object_destroyed_at:10}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:9}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                249,
+                                67,
+                                175
+                            ],
+                            "bb_max": [
+                                251,
+                                71,
+                                177
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                250.5,
+                                68,
+                                176.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{spawner_object_destroyed_at:10}": [
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                254,
+                                67,
+                                149
+                            ],
+                            "bb_max": [
+                                256,
+                                73,
+                                147
+                            ],
+                            "identifier": "air",
+                            "break": false
+                        },
+                        {
+                            "name": "explosion",
+                            "position": [
+                                255.5,
+                                68,
+                                148.5
+                            ],
+                            "sound": true
+                        }
+                    ],
+                    "{relay_point:8}": [
+                        {
+                            "name": "lightning_bolt",
+                            "position": [
+                                231.5,
+                                67,
+                                116.5
+                            ]
+                        },
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:11}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
                 },
                 "object_navigation_rules": "normal"
             },
@@ -647,7 +823,7 @@
                         {
                             "name": "add_drop_items",
                             "coin": 60,
-                            "food": 5,
+                            "food": 2,
                             "amethyst": 21,
                             "per_player": true
                         }
