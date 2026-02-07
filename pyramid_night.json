@@ -71,19 +71,19 @@
                                 "1": 1
                             },
                             "progress_text": "制限時間内にクリアする: 残り %d秒",
-                            "clear_text": "クリア！",
+                            "clear_text": "...",
                             "end_if_failed": true
                         }
                     },
                     "successful_game_actions": [],
                     "failure_game_actions": [
                         {
-                            "name": "kill_villager"
-                        },
-                        {
                             "name": "broadcast_title",
                             "title": "§cTIME OVER",
                             "subtitle": "§7制限時間内にクリアしよう"
+                        },
+                        {
+                            "name": "kill_villager"
                         }
                     ],
                     "is_sequentially": false,
