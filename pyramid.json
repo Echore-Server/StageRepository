@@ -2722,6 +2722,21 @@
                             ],
                             "identifier": "orange_carpet",
                             "break": false
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                234,
+                                -13,
+                                180
+                            ],
+                            "bb_max": [
+                                258,
+                                -13,
+                                215
+                            ],
+                            "identifier": "sandstone",
+                            "break": false
                         }
                     ],
                     "{spawner_monsters_eliminated_at:17} + 60": [
