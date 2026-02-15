@@ -1586,7 +1586,7 @@
                         ],
                         "spawn_type": "periodic",
                         "period": 9,
-                        "count": 2,
+                        "count": 1,
                         "offset": "{desert_owl:trust:10}",
                         "increment": 0,
                         "pool": [
