@@ -23,6 +23,10 @@
             {
                 "identifier": "tag_grassland_zombie",
                 "amount": 1
+            },
+            {
+                "identifier": "elementary_extraction_speedup_ticket",
+                "amount": 1
             }
         ]
     },
@@ -125,7 +129,7 @@
                 "can_monsters_attack_object": true,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 1.7,
+                    "health_multiplier": 1.6,
                     "attack_damage_multiplier": 1,
                     "movement_speed_multiplier": 1
                 },
@@ -3358,7 +3362,7 @@
                 "can_monsters_attack_object": false,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 2.25,
+                    "health_multiplier": 2.1,
                     "attack_damage_multiplier": 1,
                     "movement_speed_multiplier": 1
                 },
@@ -3896,8 +3900,8 @@
                 "can_monsters_attack_object": true,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 1.6,
-                    "attack_damage_multiplier": 0.9,
+                    "health_multiplier": 1.5,
+                    "attack_damage_multiplier": 0.75,
                     "movement_speed_multiplier": 0.65
                 },
                 "relay_points": {
@@ -4300,8 +4304,8 @@
                 "can_monsters_attack_object": false,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 1.2,
-                    "attack_damage_multiplier": 1,
+                    "health_multiplier": 1.1,
+                    "attack_damage_multiplier": 0.9,
                     "movement_speed_multiplier": 1
                 },
                 "relay_points": [
@@ -4829,7 +4833,7 @@
                 "can_monsters_attack_object": false,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 0.9,
+                    "health_multiplier": 0.85,
                     "attack_damage_multiplier": 1,
                     "movement_speed_multiplier": 1
                 },

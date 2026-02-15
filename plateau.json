@@ -9,7 +9,12 @@
     "story_info": {
         "checkpoint_node": "g4",
         "raid_nodes": [],
-        "global_drop_materials": []
+        "global_drop_materials": [
+            {
+                "identifier": "elementary_extraction_speedup_ticket",
+                "amount": 1
+            }
+        ]
     },
     "version": "1.20",
     "root_node": {
