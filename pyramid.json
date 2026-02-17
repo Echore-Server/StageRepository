@@ -1045,9 +1045,9 @@
                 "can_monsters_attack_object": false,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 0.9,
-                    "attack_damage_multiplier": 1,
-                    "movement_speed_multiplier": 1
+                    "health_multiplier": 0.85,
+                    "attack_damage_multiplier": 0.85,
+                    "movement_speed_multiplier": 0.9
                 },
                 "relay_points": [
                     [
@@ -3362,7 +3362,7 @@
                 "can_monsters_attack_object": false,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 2.1,
+                    "health_multiplier": 2.0,
                     "attack_damage_multiplier": 1,
                     "movement_speed_multiplier": 1
                 },
