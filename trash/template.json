@@ -8,6 +8,8 @@
     "spawn_position": [232.5, 67.0, 281.5],
     "object_position": [232.5, 67.0, 281.5],
     "world_time": 6000,
+    "global_stage_level": -1,
+    "story_info": null,
     "monster_point_references": {
 
     },
