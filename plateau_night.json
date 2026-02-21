@@ -70,10 +70,10 @@
                 "object_speed": 0.18,
                 "require_object_arrival": true,
                 "roll_amethyst_power": false,
-                "can_monsters_attack_object": true,
+                "can_monsters_attack_object": false,
                 "can_monsters_climb_walls": false,
                 "monster_stats_modifier": {
-                    "health_multiplier": 0.5,
+                    "health_multiplier": 1,
                     "attack_damage_multiplier": 1,
                     "movement_speed_multiplier": 1
                 },
@@ -150,8 +150,8 @@
                                 "count": 1
                             }
                         ],
-                        "performances": {
-                            "1": {
+                        "performances": [
+                            {
                                 "type": "motion",
                                 "motion": [
                                     1.87,
@@ -159,17 +159,17 @@
                                     0.6
                                 ]
                             },
-                            "2": {
+                            {
                                 "type": "delayed",
                                 "delay": 40,
-                                "after": {
-                                    "1": {
+                                "after": [
+                                    {
                                         "type": "freeze",
                                         "duration": 100
                                     }
-                                }
+                                ]
                             }
-                        },
+                        ],
                         "dummy": false,
                         "drop_multiplier": 1
                     },
@@ -286,8 +286,8 @@
                                 "count": 1
                             }
                         ],
-                        "performances": {
-                            "1": {
+                        "performances": [
+                            {
                                 "type": "lerp",
                                 "lerp_type": "manual",
                                 "offset": [
@@ -303,11 +303,11 @@
                                 "lerp_ticks": 40,
                                 "cancel_suffocation_damage": false
                             },
-                            "2": {
+                            {
                                 "type": "delayed",
                                 "delay": 41,
-                                "after": {
-                                    "1": {
+                                "after": [
+                                    {
                                         "type": "motion",
                                         "motion": [
                                             -1.87,
@@ -315,9 +315,9 @@
                                             -0.01
                                         ]
                                     }
-                                }
+                                ]
                             }
-                        },
+                        ],
                         "dummy": false,
                         "drop_multiplier": 1
                     },
@@ -332,11 +332,35 @@
                         "tick": "{relay_point:9}+20",
                         "pool": [
                             {
-                                "registry_identifier": "stone_miner_manager_lv1",
+                                "registry_identifier": "stone_miner_manager_lv2",
                                 "count": 1
                             }
                         ],
                         "performances": [],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "7": {
+                        "position": [
+                            198.5,
+                            40,
+                            285.5
+                        ],
+                        "max_spawn_offset": null,
+                        "spawn_type": "once",
+                        "tick": "{miner_manager:retreat}",
+                        "pool": [
+                            {
+                                "registry_identifier": "awaken_husk_lv1",
+                                "count": 1
+                            }
+                        ],
+                        "performances": {
+                            "1": {
+                                "type": "freeze",
+                                "duration": 110
+                            }
+                        },
                         "dummy": false,
                         "drop_multiplier": 1
                     }
@@ -349,11 +373,11 @@
                             "name": "skip_current_object_navigation"
                         }
                     ],
-                    "{relay_point:1}": {
-                        "1": {
+                    "{relay_point:1}": [
+                        {
                             "name": "stop_object_navigation"
                         },
-                        "2": {
+                        {
                             "name": "broadcast_free_camera_instruction",
                             "camera_position": [
                                 276.5,
@@ -368,13 +392,13 @@
                             "ease_duration": 1.5,
                             "ease_type": 4
                         },
-                        "3": {
+                        {
                             "name": "set_opt_object_navigation_ignore_rules",
                             "boolean": true
                         }
-                    },
-                    "{relay_point:1}+45": {
-                        "1": {
+                    ],
+                    "{relay_point:1}+45": [
+                        {
                             "name": "fill_blocks",
                             "bb_min": [
                                 262,
@@ -389,7 +413,7 @@
                             "identifier": "air",
                             "break": true
                         },
-                        "2": {
+                        {
                             "name": "broadcast_free_camera_instruction",
                             "camera_position": [
                                 276.5,
@@ -404,7 +428,7 @@
                             "ease_duration": 2,
                             "ease_type": 4
                         },
-                        "3": {
+                        {
                             "name": "explosion",
                             "position": [
                                 261.5,
@@ -413,7 +437,7 @@
                             ],
                             "sound": true
                         }
-                    },
+                    ],
                     "{relay_point:1}+105": [
                         {
                             "name": "broadcast_clear_camera_instruction"
@@ -452,8 +476,8 @@
                             "boolean": false
                         }
                     ],
-                    "{relay_point:8}": {
-                        "1": {
+                    "{relay_point:8}": [
+                        {
                             "name": "plateau_invoke_laser",
                             "from": [
                                 252.5,
@@ -468,7 +492,7 @@
                             "instant": true,
                             "ratio": 0
                         },
-                        "2": {
+                        {
                             "name": "raytrace_fill_blocks",
                             "from": [
                                 252.5,
@@ -486,23 +510,23 @@
                             "sphere_ray": true,
                             "update": false
                         },
-                        "3": {
+                        {
                             "name": "cancel_monster_spawn",
                             "point_number": 4,
                             "kill_spawned_monsters": true
                         }
-                    },
-                    "{relay_point:7}": {
-                        "1": {
+                    ],
+                    "{relay_point:7}": [
+                        {
                             "name": "set_opt_object_navigation_ignore_rules",
                             "boolean": true
                         }
-                    },
-                    "{relay_point:9}": {
-                        "1": {
+                    ],
+                    "{relay_point:9}": [
+                        {
                             "name": "stop_object_navigation"
                         },
-                        "2": {
+                        {
                             "name": "plateau_invoke_laser",
                             "from": [
                                 225.5,
@@ -516,9 +540,9 @@
                             ],
                             "ratio": 0
                         }
-                    },
-                    "{relay_point:9}+35": {
-                        "1": {
+                    ],
+                    "{relay_point:9}+35": [
+                        {
                             "name": "raytrace_fill_blocks",
                             "from": [
                                 225.5,
@@ -536,8 +560,71 @@
                             "sphere_ray": true,
                             "update": false
                         },
-                        "2": {
+                        {
                             "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{relay_point:10}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{miner_manager:retreat}": {
+                        "1": {
+                            "name": "broadcast_camera_fade",
+                            "fade_in": 0,
+                            "stay": 1.5,
+                            "fade_out": 3,
+                            "red": 0,
+                            "green": 0,
+                            "blue": 0
+                        },
+                        "2": {
+                            "name": "teleport_players",
+                            "position": [
+                                198.5,
+                                40,
+                                269.5
+                            ],
+                            "yaw": 0,
+                            "pitch": 0
+                        },
+                        "3": {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                198.5,
+                                40,
+                                280.5
+                            ],
+                            "facing_position": [
+                                198.5,
+                                39,
+                                281.5
+                            ],
+                            "ease_duration": 0,
+                            "ease_type": 4
+                        }
+                    },
+                    "{miner_manager:retreat}+35": {
+                        "1": {
+                            "name": "broadcast_free_camera_instruction",
+                            "camera_position": [
+                                198.5,
+                                40,
+                                280.5
+                            ],
+                            "facing_position": [
+                                198.5,
+                                41,
+                                285.5
+                            ],
+                            "ease_duration": 2,
+                            "ease_type": 4
+                        }
+                    },
+                    "{miner_manager:retreat}+100": {
+                        "1": {
+                            "name": "broadcast_clear_camera_instruction"
                         }
                     }
                 },
