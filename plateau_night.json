@@ -59,12 +59,42 @@
         "g2": {
             "serialize_type": "direct",
             "info": {
-                "level_type": "normal",
-                "level": [],
+                "level_type": "purification",
+                "level": {
+                    "relay_point": 12,
+                    "range": 8,
+                    "is_range_2d": true,
+                    "max_level": 1,
+                    "position": [
+                        198.5,
+                        40,
+                        291.5
+                    ],
+                    "beacon_base_position": [
+                        198,
+                        31,
+                        291
+                    ],
+                    "override_range_by_level": [],
+                    "fallback_amethyst_power_pool": [],
+                    "amethyst_power_pool": [],
+                    "require_energy": {
+                        "1": 2400
+                    },
+                    "successful_game_actions": [
+                        {
+                            "name": "notify_timestamp",
+                            "id": "purification_complete"
+                        }
+                    ],
+                    "follow_object": false,
+                    "stop_object_navigation": true,
+                    "plane_normal": null
+                },
                 "position": [
-                    198.5,
+                    182.5,
                     40,
-                    291.5
+                    279.5
                 ],
                 "spawn_position": null,
                 "object_speed": 0.18,
@@ -132,6 +162,16 @@
                         198.5,
                         40,
                         272.5
+                    ],
+                    [
+                        198.5,
+                        40,
+                        266.5
+                    ],
+                    [
+                        198.5,
+                        40,
+                        291.5
                     ]
                 ],
                 "monster_points": {
@@ -355,12 +395,59 @@
                                 "count": 1
                             }
                         ],
-                        "performances": {
-                            "1": {
+                        "performances": [
+                            {
                                 "type": "freeze",
                                 "duration": 110
                             }
+                        ],
+                        "dummy": false,
+                        "drop_multiplier": 1
+                    },
+                    "8": {
+                        "position": [
+                            198.5,
+                            40,
+                            278.5
+                        ],
+                        "max_spawn_offset": [
+                            16,
+                            0,
+                            10
+                        ],
+                        "spawn_type": "periodic",
+                        "period": 40,
+                        "count": 60,
+                        "offset": "{purification_level:level_started_at:1}",
+                        "increment": 0,
+                        "pool": {
+                            "list": [
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "stone_golem_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                },
+                                {
+                                    "pool": [
+                                        {
+                                            "registry_identifier": "hardened_zombie_lv1",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "choice_conditions": [],
+                                    "game_actions_on_chosen": []
+                                }
+                            ],
+                            "game_actions_before_choose": [],
+                            "game_actions_after_choose": [],
+                            "weighted": false
                         },
+                        "performances": [],
                         "dummy": false,
                         "drop_multiplier": 1
                     }
@@ -564,13 +651,8 @@
                             "name": "resume_object_navigation"
                         }
                     ],
-                    "{relay_point:10}": [
+                    "{miner_manager:retreat}": [
                         {
-                            "name": "stop_object_navigation"
-                        }
-                    ],
-                    "{miner_manager:retreat}": {
-                        "1": {
                             "name": "broadcast_camera_fade",
                             "fade_in": 0,
                             "stay": 1.5,
@@ -579,7 +661,7 @@
                             "green": 0,
                             "blue": 0
                         },
-                        "2": {
+                        {
                             "name": "teleport_players",
                             "position": [
                                 198.5,
@@ -589,7 +671,7 @@
                             "yaw": 0,
                             "pitch": 0
                         },
-                        "3": {
+                        {
                             "name": "broadcast_free_camera_instruction",
                             "camera_position": [
                                 198.5,
@@ -604,9 +686,9 @@
                             "ease_duration": 0,
                             "ease_type": 4
                         }
-                    },
-                    "{miner_manager:retreat}+35": {
-                        "1": {
+                    ],
+                    "{miner_manager:retreat}+35": [
+                        {
                             "name": "broadcast_free_camera_instruction",
                             "camera_position": [
                                 198.5,
@@ -621,12 +703,42 @@
                             "ease_duration": 2,
                             "ease_type": 4
                         }
-                    },
-                    "{miner_manager:retreat}+100": {
-                        "1": {
+                    ],
+                    "{miner_manager:retreat}+100": [
+                        {
                             "name": "broadcast_clear_camera_instruction"
                         }
-                    }
+                    ],
+                    "{awaken_husk:phase2}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ],
+                    "{purification_complete}+2": [
+                        {
+                            "name": "stop_object_navigation"
+                        },
+                        {
+                            "name": "plateau_invoke_wave_ratio",
+                            "position": [
+                                198.5,
+                                41,
+                                297.5
+                            ],
+                            "hostile_ratio_damage": 1,
+                            "friend_ratio_damage": 0.1
+                        }
+                    ],
+                    "{relay_point:11}": [
+                        {
+                            "name": "stop_object_navigation"
+                        }
+                    ],
+                    "{spawner_monsters_eliminated_at:7}": [
+                        {
+                            "name": "resume_object_navigation"
+                        }
+                    ]
                 },
                 "object_navigation_rules": "normal"
             },
