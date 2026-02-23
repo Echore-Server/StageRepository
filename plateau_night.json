@@ -680,6 +680,21 @@
                             ],
                             "ease_duration": 0,
                             "ease_type": 4
+                        },
+                        {
+                            "name": "fill_blocks",
+                            "bb_min": [
+                                205,
+                                48,
+                                267
+                            ],
+                            "bb_max": [
+                                197,
+                                48,
+                                275
+                            ],
+                            "identifier": "smooth_basalt,basalt,deepslate,cobbled_deepslate",
+                            "break": false
                         }
                     ],
                     "{miner_manager:retreat}+35": [
@@ -772,7 +787,7 @@
                             "name": "add_drop_items",
                             "coin": 60,
                             "amethyst": 21,
-                            "food": 5,
+                            "food": 6,
                             "per_player": true
                         }
                     ]
