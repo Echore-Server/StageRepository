@@ -787,7 +787,7 @@
                             "name": "add_drop_items",
                             "coin": 60,
                             "amethyst": 21,
-                            "food": 6,
+                            "food": 7,
                             "per_player": true
                         }
                     ]
