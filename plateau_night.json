@@ -455,11 +455,6 @@
                 "static_monster_points": [],
                 "border_blocks": [],
                 "game_action_timestamp": {
-                    "1": [
-                        {
-                            "name": "skip_current_object_navigation"
-                        }
-                    ],
                     "{relay_point:1}": [
                         {
                             "name": "stop_object_navigation"
@@ -777,7 +772,7 @@
                             "name": "add_drop_items",
                             "coin": 60,
                             "amethyst": 21,
-                            "food": 2,
+                            "food": 5,
                             "per_player": true
                         }
                     ]
